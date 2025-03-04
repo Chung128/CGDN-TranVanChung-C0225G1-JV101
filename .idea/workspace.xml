@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6538ef9a-978d-462a-b71f-78fca804f6b8" name="Changes" comment="" />
+    <list default="true" id="6538ef9a-978d-462a-b71f-78fca804f6b8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/ss3_ma_gia_luu_do/tim_max_trong_day_so/so_lon_nhat_trong_day.drawio.png" beforeDir="false" afterPath="$PROJECT_DIR$/ss3_ma_gia_luu_do/tim_max_trong_day_so/so_lon_nhat_trong_day.drawio.png" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2tf4DycALcyXlGC6PIv8zBHCafb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -18,6 +26,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "D:/codegym/module1/src/main.js",
     "vue.rearranger.settings.migration": "true"
@@ -39,6 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1740729680321</updated>
       <workItem from="1740729681245" duration="110000" />
+      <workItem from="1741073472318" duration="674000" />
     </task>
     <servers />
   </component>
