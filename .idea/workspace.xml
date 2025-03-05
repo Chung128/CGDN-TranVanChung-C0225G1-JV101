@@ -5,12 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6538ef9a-978d-462a-b71f-78fca804f6b8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss4_git_html/chaofa.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss4_git_html/tao_cv.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss4_git_html/tao_cv_ca_nhan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss4_git_html/tao_danh_sach.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss4_git_html/videoplayback.m4a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,9 +38,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/codegym/module1/ss4_git_html",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -37,6 +52,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\codegym\module1\ss4_git_html" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -54,6 +74,7 @@
       <updated>1740729680321</updated>
       <workItem from="1740729681245" duration="110000" />
       <workItem from="1741073472318" duration="1273000" />
+      <workItem from="1741137116425" duration="17327000" />
     </task>
     <servers />
   </component>
