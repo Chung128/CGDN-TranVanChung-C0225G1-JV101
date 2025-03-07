@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ffds</title>
+</head>
+<body>
+<p>ví dụ </p>
+<select id="chung1" onchange="ten_gi_cung_duoc()">
+    <option value="chuA">A</option>
+    <option value="chuB">B</option>
+    <option value="chuC">C</option>
+</select>
+</body>
+</html>
+<script>
+    function ten_gi_cung_duoc() {
+        var selectedvalue = document.getElementById("chung1").value;
+        alert(selectedvalue);
+    }
+</script>
