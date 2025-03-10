@@ -24,10 +24,10 @@
 <body>
 <script>
     function convert(){
-        let multiplier=parseFloat(document.getElementById('converter').value);
+        let money=parseFloat(document.getElementById('converter').value);
         let truoc=parseFloat(document.getElementById('before').value);
         let sau=parseFloat(document.getElementById('after').value);
-        let exchange=(truoc*multiplier)/sau;
+        let exchange=(truoc*money)/sau;
         document.getElementById('Result').innerText=("Result:"+exchange);
     }
 </script>

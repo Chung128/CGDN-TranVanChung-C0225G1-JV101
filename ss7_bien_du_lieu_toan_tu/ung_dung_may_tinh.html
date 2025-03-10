@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<input id="number1"  placeholder="Nhập số thứ nhất">
+<input id="number2" placeholder="Nhập số thứ hai">
+
+<button  onclick="tong()">Cộng</button>
+<button onclick="hieu()">Trừ</button>
+<body>
+<h3>Result:</h3>
+<p id="sum"></p>
+<p id="sub"></p>
+<script>
+  function tong(){
+  let before=+document.getElementById("number1").value;
+  let after=+document.getElementById("number2").value;
+  let cong=before+after;
+  document.getElementById("sum").innerText=(" "+cong);
+  }
+  function hieu(){
+    let before=+document.getElementById("number1").value;
+    let after=+document.getElementById("number2").value;
+    let tru=before-after;
+    document.getElementById("sub").innerText=(" "+tru);
+  }
+</script>
+</body>
+</html>

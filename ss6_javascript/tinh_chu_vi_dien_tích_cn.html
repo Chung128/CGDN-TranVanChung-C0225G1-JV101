@@ -7,10 +7,10 @@
 <input id="long">chieu dai
 <input id="short">chiều rộng
 <p id="chuvi"></p>
-<p id="dientich"></p>
+<!--<p id="dientich"></p>-->
 <button onclick="perimeter()">Chu vi</button>
-<button onclick="acreage()">Diện tích</button>
-<button onclick="reset()">Xóa hết</button>
+<!--<button onclick="acreage()">Diện tích</button>-->
+<!--<button onclick="reset()">Xóa hết</button>-->
 <body>
 <script>
     function perimeter() {
@@ -20,16 +20,16 @@
         document.getElementById("chuvi").innerText = "kết quả là :" + sum;
     }
 
-    function acreage() {
-        let number = +document.getElementById("long").value;
-        let number1 = +document.getElementById("short").value;
-        let sum = number * number1;
-        document.getElementById("dientich").innerText = "kết quả là :" + sum;
-    }
-    function reset() {
-        document.getElementById("long").value="";
-        document.getElementById("short").value="";
-    }
+    // function acreage() {
+    //     let number = +document.getElementById("long").value;
+    //     let number1 = +document.getElementById("short").value;
+    //     let sum = number * number1;
+    //     document.getElementById("dientich").innerText = "kết quả là :" + sum;
+    // }
+    // function reset() {
+    //     document.getElementById("long").value="";
+    //     document.getElementById("short").value="";
+    // }
 </script>
 </body>
 </html>
