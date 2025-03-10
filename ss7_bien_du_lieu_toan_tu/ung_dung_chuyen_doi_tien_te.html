@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tiền tệ</title>
+</head>
+<div>
+    <p>Amount</p>
+    <input type="number" id="converter">
+</div>
+<div><p>From Currency</p>
+    <select id="before">
+    <option value="23000" >USD</option>
+    <option value="1">VND</option>
+</select></div>
+<div><p>To Currency</p>
+<select id=after>
+    <option value="1">VND</option>
+    <option value="23000">USD</option>
+</select>
+</div>
+<button onclick="convert()">convert</button>
+<p id="Result"></p>
+<body>
+<script>
+    function convert(){
+        let multiplier=parseFloat(document.getElementById('converter').value);
+        let truoc=parseFloat(document.getElementById('before').value);
+        let sau=parseFloat(document.getElementById('after').value);
+        let exchange=(truoc*multiplier)/sau;
+        document.getElementById('Result').innerText=("Result:"+exchange);
+    }
+</script>
+</body>
+</html>
