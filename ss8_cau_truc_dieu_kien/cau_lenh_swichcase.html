@@ -5,14 +5,14 @@
     <title>Câu lệnh switch-case</title>
 </head>
 <h1>Kiểm tra số ngày trong tháng</h1>
-<input type="number" id="month" placeholder="Nhập tháng">
-<button onclick="newMonth()">Check</button>
+<input type="number" id="thangMay" placeholder="Nhập tháng">
+<button onclick="soNgay()">Check</button>
 <p id="soNgay"></p>
 <body>
 <script>
-    function newMonth(){
-      let month=+document.getElementById("month").value;
-      switch (month) {
+    function soNgay(){
+      let thang=+document.getElementById("thangMay").value;
+      switch (thang) {
         case 1:
         case 3:
         case 5:
@@ -20,19 +20,19 @@
         case 8:
         case 10:
         case 12:
-                month=`Tháng ${month} có 31 ngày`;
+                thang=`Tháng ${thang} có 31 ngày`;
                break;
         case 2:
-          month='Tháng 2 có 28 hoặc 29 ngày';
+          thang='Tháng 2 có 28 hoặc 29 ngày';
           break;
         case 4:
         case 6:
         case 9:
         case 11:
-          month=`Tháng ${month} có 30 ngày`;
+          thang=`Tháng ${thang} có 30 ngày`;
           break;
       }
-      document.getElementById('soNgay').innerHTML=(month)
+      document.getElementById("soNgay").innerHTML=(thang)
     }
 </script>
 </body>

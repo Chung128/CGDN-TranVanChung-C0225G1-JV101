@@ -8,17 +8,17 @@
 <h2>Tính chỉ số cân nặng</h2>
 <legend>
 <p>Nhập cân nặng :(kg)
-    <label><input type="number" id="weight"><br></label></p>
+    <label><input type="number" id="canNang"><br></label></p>
 
-    <p>Nhập chiều cao :(m)<input type="number" id="tall"></p>
+    <p>Nhập chiều cao :(m)<input type="number" id="chieuCao"></p>
 <button onclick="kiemTra()">Kiểm tra</button>
     <p id='ketQua'></p>
 </legend>
 <script>
     function kiemTra() {
-        let weight = document.getElementById('weight').value;
-        let tall = document.getElementById('tall').value;
-        let kiemTra = weight / (tall * tall);
+        let nang = document.getElementById('canNang').value;
+        let cao = document.getElementById('chieuCao').value;
+        let kiemTra = nang / (cao * cao);
         if (kiemTra >=30) {
             document.getElementById('ketQua').innerHTML=('Chỉ số BMI của bạn là:' + kiemTra +' .bạn quá béo rồi,giảm cân đi');
         } else if (kiemTra >=25) {

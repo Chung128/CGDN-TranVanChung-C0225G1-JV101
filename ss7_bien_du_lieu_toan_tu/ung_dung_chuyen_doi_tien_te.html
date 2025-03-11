@@ -6,29 +6,29 @@
 </head>
 <div>
     <p>Amount</p>
-    <input type="number" id="converter">
+    <input type="number" id="tinhToan">
 </div>
 <div><p>From Currency</p>
-    <select id="before">
+    <select id="soTruoc">
     <option value="23000" >USD</option>
     <option value="1">VND</option>
 </select></div>
 <div><p>To Currency</p>
-<select id=after>
+<select id=soSau>
     <option value="1">VND</option>
     <option value="23000">USD</option>
 </select>
 </div>
 <button onclick="convert()">convert</button>
-<p id="Result"></p>
+<p id="chuyenDoi"></p>
 <body>
 <script>
     function convert(){
-        let money=parseFloat(document.getElementById('converter').value);
-        let truoc=parseFloat(document.getElementById('before').value);
-        let sau=parseFloat(document.getElementById('after').value);
+        let money=parseFloat(document.getElementById('tinhToan').value);
+        let truoc=parseFloat(document.getElementById('soTruoc').value);
+        let sau=parseFloat(document.getElementById('soSau').value);
         let exchange=(truoc*money)/sau;
-        document.getElementById('Result').innerText=("Result:"+exchange);
+        document.getElementById('chuyenDoi').innerText=("Result:"+exchange);
     }
 </script>
 </body>

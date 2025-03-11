@@ -22,7 +22,7 @@
 </style>
 <body>
 <fieldset>
-    <input type="text" id="calculator"><br>
+    <input type="text" id="mayTinh"><br>
 <button onclick="nhap('1')">1</button>
 <button onclick="nhap('2')">2</button>
 <button onclick="nhap('3')">3</button>
@@ -42,14 +42,14 @@
 </fieldset>
 <script>
     function nhap(value) {
-        document.getElementById('calculator').value += value;
+        document.getElementById('mayTinh').value += value;
     }
     function xoaSo(){
-        let xoa=document.getElementById('calculator');
-        xoa.value=xoa.value.slice(0,-1)
+        let xoa=document.getElementById('mayTinh');
+        xoa.value=xoa.value.slice(0,-1);  //có thể thay thế số -1 để tăng số kí tự xóa 1 số hay nhiều số
     }
     function ketQua(){
-        let tinhToan=document.getElementById('calculator');
+        let tinhToan=document.getElementById('mayTinh');
         tinhToan.value=eval(tinhToan.value);
     }
 </script>
