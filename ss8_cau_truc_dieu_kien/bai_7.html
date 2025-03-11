@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<!--Nếu sử dụng gói cước không giới hạn, cước sẽ cố định hàng tháng.-->
+
+<!-- Ví dụ:-->
+
+<!--Gói thuê bao 200.000 VND/tháng (gọi 1000 phút miễn phí, 5GB data)-->
+<!--Gọi vượt 50 phút: 800đ/phút-->
+<!--Dùng thêm 1GB data: 10.000 VND-->
+<body>
+<script>
+  let cuocCoDinh=+prompt("Nhập giá cước thuê bao:");
+  let phutGoi=+prompt('Nhập số phút gọi:');
+  let dataDung=+prompt("nhập số data dùng:");
+  if (phutGoi <=1000&&dataDung <=5){
+    tong=cuocCoDinh;
+    alert("Tổng cước phải trả là :" +tong);
+  }else {
+    tong = cuocCoDinh + (800 * phutGoi) + 10000 * (dataDung-5);
+    alert("Tổng cước phải trả là :" + tong);
+  }
+</script>
+</body>
+</html>
