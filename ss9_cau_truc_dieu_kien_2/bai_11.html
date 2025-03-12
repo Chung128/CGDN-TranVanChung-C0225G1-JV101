@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính thuế thu nhập cá nhân</title>
+</head>
+<body>
+<input type="number" id="thuTinhThue">
+<p id="dauRa"></p>
+<button onclick="nhanDay()">kết quả</button>
+<script>
+    function nhanDay() {
+        let thuNhap = +document.getElementById("thuTinhThue").value;
+        if (thuNhap > 10000000) {
+            let thueSuat = 15 / 100;
+            let thueThu = thuNhap * thueSuat;
+            document.getElementById("dauRa").innerHTML = (`thuế thu nhập cá nhân là ${thueThu} VND`);
+        } else if (thuNhap > 5000000) {
+            let thueSuat = 10 / 100;
+            let thueThu = thuNhap * thueSuat;
+            document.getElementById("dauRa").innerHTML = (`thuế thu nhập cá nhân là ${thueThu} VND`);
+        } else {
+            let thueSuat = 5 / 100;
+            let thueThu = thuNhap * thueSuat;
+            document.getElementById("dauRa").innerHTML = (`thuế thu nhập cá nhân là ${thueThu} VND`);
+        }
+    }
+</script>
+</body>
+</html>

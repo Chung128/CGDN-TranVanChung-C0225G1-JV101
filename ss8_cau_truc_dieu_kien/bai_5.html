@@ -9,15 +9,16 @@
     let kiemTra = +prompt("Nhập điểm kiểm tra:");
     let giuaKi = +prompt("Nhập điểm giữa kì:");
     let cuoiKi = +prompt("Nhập điểm cuối kì:");
-    let diemtb = (kiemTra + giuaKi + cuoiKi) / 3;
-    if (diemtb >= 8.5) {
+    let diemTrungBinh = (kiemTra + giuaKi + cuoiKi) / 3;
+    if (diemTrungBinh >= 8.5) {
         alert("Học sinh giỏi .");
     } else if (diemtb >= 6.5) {
         alert("Học sinh khá .");
     } else if (diemtb >= 4) {
         alert("Học sinh trung bình .");
-    } else
+    } else {
         alert("học sinh yếu .");
+    }
 </script>
 </body>
 </html>

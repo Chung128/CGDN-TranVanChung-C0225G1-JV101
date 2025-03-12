@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giá điện</title>
+</head>
+<input type="number" id="soDienDung">
+<p id="soTienTra"></p>
+<button onclick="tinhTien()">tính</button>
+<body>
+<script>
+    function tinhTien() {
+        let soDien = +document.getElementById('soDienDung').value;
+        if (soDien > 200) {
+            let giaDien = 2.074;
+            let soTien = soDien * giaDien;
+            document.getElementById("soTienTra").innerHTML = (`Số tiền phải trả là ${soTien} `);
+        } else if (soDien > 100) {
+            let giaDien = 1.786;
+            let soTien = soDien * giaDien;
+            document.getElementById("soTienTra").innerHTML = (`Số tiền phải trả là ${soTien} `);
+        } else {
+            let giaDien = 1.728;
+            let soTien = soDien * giaDien;
+            document.getElementById("soTienTra").innerHTML = (`Số tiền phải trả là ${soTien} `);
+        }
+    }
+</script>
+</body>
+</html>

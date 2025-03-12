@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra 3 cạnh thuộc tam giác</title>
+</head>
+<input type="number" id="soA">
+<input type="number" id="soB">
+<input type="number" id="soC">
+<button onclick="kiemTra()">Kết quả</button>
+<p id="dauRa"></p>
+<body>
+<script>
+    function kiemTra() {
+        let a = +document.getElementById('soA').value;
+        let b = +document.getElementById('soB').value;
+        let c = +document.getElementById('soC').value;
+        if (a > 0 && b > 0 && c > 0) {
+            if (a + b > c) {
+                if (b + c > a) {
+                    if (a + c > b) {
+                        document.getElementById('dauRa').innerText = (`Đây là 1 tam giác`);
+                    } else {
+                        document.getElementById('dauRa').innerText = (`Đây không phải là 1 tam giác`);
+                    }
+                } else {
+                    document.getElementById('dauRa').innerText = (`Đây không phải là 1 tam giác`);
+                }
+            } else {
+                document.getElementById('dauRa').innerText = (`Đây không phải là 1 tam giác`);
+            }
+        } else {
+            document.getElementById('dauRa').innerText = (`Đây không phải là 1 tam giác`);
+        }
+    }
+</script>
+</body>
+</html>

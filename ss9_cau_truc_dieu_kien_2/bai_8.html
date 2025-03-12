@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Một số nhập vào có phải tuổi của 1 người không</title>
+</head>
+<input type="number" value="" id="soTuoi">
+<button onclick="ketQua()">click</button>
+<p id="dauRa"></p>
+<body>
+<script>
+    function ketQua() {
+        let tuoi = parseInt(document.getElementById('soTuoi').value);
+        if (tuoi > 0 && tuoi < 120) {
+            document.getElementById('dauRa').innerHTML = (`số tuổi của bạn là:${tuoi} `);
+        } else
+            document.getElementById('dauRa').innerHTML = (`${tuoi}: không phải số tuổi của 1 người.`);
+    }
+</script>
+</body>
+</html>
