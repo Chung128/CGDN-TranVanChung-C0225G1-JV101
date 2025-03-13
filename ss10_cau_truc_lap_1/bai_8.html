@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game đoán số</title>
+</head>
+<body>
+<button onclick="choi()">Bắt đầu</button>
+<script>
+    function choi() {
+        let x = +prompt("Nhập số làm chuẩn:");
+        let y = +prompt('nhập số bạn đoán :');
+        for (let i = 0; i < 2; i++) {
+            if (x > y) {
+                alert('Bạn đoán nhỏ hơn');
+            } else if (x === y) {
+                alert('Bạn đoán đúng rồi .');
+            } else {
+                alert('Bạn đoán lớn hơn');
+            }
+            i++;
+        }
+        document.write('Bạn hết lượt đoán');
+    }
+</script>
+</body>
+</html>

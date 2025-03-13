@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm số fibonacci đâù tiên chia hết cho 5</title>
+</head>
+<body>
+<script>
+    function moHam() {
+        let a = 0;
+        let b = 1;
+        while (true) {
+            if (a % 5 === 0 && a !== 0) {
+                console.log(`số fibonacci đầu tiên chia hết cho 5 là: ${a} `);
+                break;
+            }
+            let soFiboTiep = a + b;
+            a = b;
+            b = soFiboTiep
+        }
+    }
+
+    moHam();
+</script>
+</body>
+</html>
