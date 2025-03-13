@@ -6,20 +6,20 @@
 </head>
 <body>
 <script>
-    function moHam(e) {
+    function lanTangSo(e) {
         let a = 0;
         let b = 1;
         let soLanLap = 0;
         while (soLanLap < e) {
             console.log(a);         //số Fibonacci hiện tại
-            c = a + b;        //c được tính là số fibonacci tiếp theo
+            c = a + b;        //c  tính là số fibonacci tiếp theo
             a = b;           //lúc này a thành b để tiếng thêm 1 bước
             b = c;             //lấy số b mới để tính c tiếp theo
             soLanLap++;      //so lan lặp tăng lên 1
         }
     }
 
-    moHam(20);
+    lanTangSo(20);
 </script>
 </body>
 </html>
