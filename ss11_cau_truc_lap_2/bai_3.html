@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vẽ tam giác</title>
+</head>
+<body>
+<script>
+    // function gocBenTrai(x){
+    //     for (let i = 1; i <= x;i++) {
+    //         for (let j = 0; j <i ; j++) {
+    //             document.write("*");
+    //         }
+    //         document.write("<br>");
+    //     }
+    // }
+    //  gocBenTrai(5)
+    for (let i = 1; i <= 5; i++) {
+        for (let j = 0; j < i; j++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+    document.write("<br>")
+    for (let i = 1; i <= 5; i++) {
+        for (let j = 5; j >= i; j--) {
+            document.write("*");
+        }
+        document.write('<br>');
+    }
+    document.write("<br>");
+    for (let i = 1; i <= 5; i++) {
+        for (let j = 5; j >= i; j--) {
+            document.write("&nbsp&nbsp");
+        }
+        for (let k = 0; k < i; k++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+    document.write("<br>");
+    for (let i = 1; i <= 5; i++) {
+        for (let j = 0; j < i; j++) {
+            document.write("&nbsp&nbsp");
+        }
+        for (let k = 5; k >= i; k--) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+
+</script>
+</body>
+</html>

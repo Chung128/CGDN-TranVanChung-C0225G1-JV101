@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In dãy Fibonacci</title>
+</head>
+<body>
+<script>
+    function lanTangSo() {
+        let e = +prompt('nhập số');
+        let a = 0;
+        let b = 1;
+        let soLanLap = 0;
+        while (soLanLap < e) {
+            console.log(a);
+            c = a + b;
+            a = b;
+            b = c;
+            soLanLap++;
+        }
+    }
+
+    lanTangSo();
+</script>
+</body>
+</html>

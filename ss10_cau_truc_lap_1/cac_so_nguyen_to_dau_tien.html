@@ -6,9 +6,9 @@
 </head>
 <body>
 <script>
-    let soLanLap = +prompt('nhập số lần lặp.');
     let a = 0;
-    for (let x = 2; a < soLanLap; x++) {
+    let x = 0
+    while (a < 20) {
         let b = 0;
         for (let i = 1; i <= x; i++) {
             if (x % i == 0) {
@@ -19,6 +19,7 @@
             console.log(x);
             a++;
         }
+        x++
     }
 </script>
 </body>

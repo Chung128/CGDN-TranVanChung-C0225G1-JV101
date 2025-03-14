@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    while (true) {
+        let x = +prompt("---------Quản lí sinh viên--------\n" +//điều kiện let để sau while để thực hiện nhấn xong 1 lệnh nó lặp lại  ban đầu.
+            "1.Hiển thị danh sách sinh viên\n" +
+            "2.Thêm mới sinh viên \n" +
+            "3.Xóa sinh viên \n" +
+            "4.Kết thúc chương trình");
+        if (x === 1) {
+            alert("1.Hiển thị danh sách sinh viên");
+        } else if (x === 2) {
+            alert('2.Thêm mới sinh viên');
+        } else if (x === 3) {
+            alert('3.Xóa sinh viên');
+        } else if (x !== 4) {
+            alert('nhập lại giá trị');
+        } else if (confirm('Bạn muốn kết thúc chương trình k?')) {
+            break;
+        }
+
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In hình chữ nhật</title>
+</head>
+<body>
+<script>
+        let chieuCao = +prompt('chiều cao ');
+        let chieuRong = +prompt('chiều rộng ');
+        for (let i = 0; i < chieuCao; i++) {
+            for (let j = 0; j < chieuRong; j++) {
+                if (i == 0 || i == chieuRong-1||j==0||j==chieuCao-1) {
+                    document.write("*")
+                } else {
+                    document.write("&ensp;")
+                }
+
+            }
+            document.write("</br>");}
+</script>
+</body>
+</html>
