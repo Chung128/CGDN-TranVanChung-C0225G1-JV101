@@ -6,7 +6,14 @@
 </head>
 <body>
 <script>
-    let tienGoc=+prompt('nhập số tiền.')
+    let tienGoc = +prompt('nhập số tiền.');
+    let kyHan = 0;
+    let lai = 0.05;
+    while (kyHan <= 5) {
+        tongTien = tienGoc * (1 + lai) ** kyHan;
+        kyHan++;
+    }
+    document.write(`Tiền lãi kép sau 5 năm là ${tongTien}`);
 </script>
 </body>
 </html>
