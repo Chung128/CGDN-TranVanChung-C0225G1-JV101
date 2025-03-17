@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tìm v và xóa v ra khỏi mảng</title>
+</head>
+<body>
+<script>
+    let mang = new Array(10);
+    for (let i = 0; i < 10; i++) {
+        mang[i] = +prompt(`nhập giá trị số ${i}`)
+    }
+    let v = +prompt('nhập số nguyên v');
+    let phanTu = mang.indexOf(v);// phương thức tìm phần tử cso thuộc mảng k
+    if (phanTu === -1) {
+        alert(`phan tử ${v} không có trong mảng `);
+    } else for (let i = phanTu; i < mang.length - 1; i++) {
+        mang[i] = mang[i + 1];
+    }
+    mang[mang.length - 1] = 0;
+    alert(`mảng sau khi xóa ${v}:${mang.join(",")} `)
+</script>
+</body>
+</html>

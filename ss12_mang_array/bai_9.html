@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nối 2 mảng a,b thành c</title>
+</head>
+<body>
+<script>
+    let a = new Array(10);
+    let b = new Array(10);
+    for (let i = 0; i < 10; i++) {
+        a[i] = +prompt(`Nhập giá trị ${i} của mảng a`);
+    }
+    for (let i = 0; i < 10; i++) {
+        b[i] = +prompt(`Nhập giá trị ${i} của mảng b`);
+    }
+    let c = a.concat(b);
+    alert(c);
+</script>
+</body>
+</html>
