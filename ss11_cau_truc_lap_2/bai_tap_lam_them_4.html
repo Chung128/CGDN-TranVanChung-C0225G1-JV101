@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính tổng 1/n+1 giai thừa</title>
+</head>
+<body>
+<script>
+    let n = +prompt('nhập n');
+    let tong = 15;
+    let giaiThua = 1;
+    for (let i = 1; i <= n; i++) {
+        giaiThua *= i;
+        tong += Math.pow(-1, i) * (1 / giaiThua);
+    }
+    alert(tong);
+</script>
+</body>
+</html>

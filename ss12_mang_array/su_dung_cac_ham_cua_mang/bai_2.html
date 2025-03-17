@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let dauVao = "025468";
+    let tachRa = dauVao.split('');
+    for (let i = 0; i < tachRa.length - 1; i++) {
+        let so1 = tachRa[i];
+        let so2 = tachRa[i + 1];
+        if (so1 % 2 === 0 && so2 % 2 === 0) {
+            tachRa.splice(i + 1, 0, "-");
+            i++;
+        }
+    }
+    alert(tachRa.join(''));
+
+</script>
+</body>
+</html>

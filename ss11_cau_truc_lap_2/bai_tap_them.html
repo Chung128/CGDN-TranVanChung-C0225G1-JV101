@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tháp dấu sao</title>
+</head>
+<body>
+<script>
+    let x = +prompt('Nhập vào ');
+    let i = 1;
+    while (i <= x) {
+        let dauCach = "&ensp;".repeat(x - i);
+        let dauSao = "*".repeat(i + i - 1);
+        i++;
+        document.write(dauCach + dauSao + "<br>");
+    }
+</script>
+</body>
+</html>

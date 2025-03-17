@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị phần tử có gi trị lớn nhất và vị trí</title>
+</head>
+<body>
+<script>
+    let mang = new Array(3);
+    for (let i = 0; i < mang.length; i++) {
+        mang[i] = +prompt(`nhập giá trị số ${i}`);
+    }
+    let lonNhat = mang[0];
+    let viTri = 0;
+    for (let i = 0; i < mang.length; i++) {
+        if (lonNhat < mang[i]) {
+            lonNhat = mang[i];
+            viTri = i;
+        }
+    }
+    alert(`số lớn nhất là : ${lonNhat},nằm ở vị trí ${viTri} `);
+</script>
+</body>
+</html>

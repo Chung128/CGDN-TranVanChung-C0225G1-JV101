@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6538ef9a-978d-462a-b71f-78fca804f6b8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_tap_lam_them_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_tap_lam_them_4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_tap_lam_them_5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bài_tap_lam_them_3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss12_mang_array/bai_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss12_mang_array/bai_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss12_mang_array/bai_tap_them.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss12_mang_array/dao_nguoc_mang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss12_mang_array/su_dung_cac_ham_cua_mang/bai_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss12_mang_array/su_dung_cac_ham_cua_mang/bai_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss12_mang_array/su_dung_cac_ham_cua_mang/bai_3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_5.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +47,10 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.bai_tap_lam_tap_2.html.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.bai_tap_lam_them_2.html.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.bai_tap_lam_them_4.html.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.bai_tap_lam_them_5.html.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
@@ -88,7 +102,11 @@
       <workItem from="1741827751169" duration="42955000" />
       <workItem from="1741883992425" duration="602000" />
       <workItem from="1741885451717" duration="2029000" />
-      <workItem from="1741914368432" duration="25657000" />
+      <workItem from="1741914368432" duration="27121000" />
+      <workItem from="1742014259769" duration="29507000" />
+      <workItem from="1742137578673" duration="3726000" />
+      <workItem from="1742180440513" duration="14545000" />
+      <workItem from="1742198150521" duration="9828000" />
     </task>
     <servers />
   </component>

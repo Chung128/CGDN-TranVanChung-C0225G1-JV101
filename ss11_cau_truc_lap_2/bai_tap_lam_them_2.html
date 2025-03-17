@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In ra số ngày tương ứng</title>
+</head>
+<body>
+<p id="soNgay"></p>
+<script>
+    let thang;
+    let nam;
+    while (true) {
+        thang = +prompt('nhập tháng');
+        nam = +prompt('nhập năm');
+        if (0 < thang && thang <= 12 && nam > 0) {
+            break;
+        }
+        alert('Nhập lại tháng năm.');
+    }
+    switch (thang) {
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+            thang = `Tháng ${thang} của năm ${nam} có 31 ngày`;
+            break;
+        case 2:
+            if (nam % 4 === 0 && nam % 100 !== 0) {
+                thang = `Tháng 2 của năm ${nam}có 29 ngày`;
+            } else if (nam % 100 === 0 && nam % 400 === 0) {
+                thang = `Tháng 2 năm ${nam} có 29 ngày`;
+            } else {
+                thang = 'Tháng 2 có 28 ngày';
+            }
+            break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            thang = `Tháng ${thang} của năm ${nam}có 30 ngày`;
+            break;
+    }
+    document.getElementById("soNgay").innerHTML = (thang);
+</script>
+</body>
+</html>

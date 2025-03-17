@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script> // nhập n độ dài của mảng(n>0 và n<20)
+//nhập vào các gí trị phần tử trong mảng
+//hiển thi ra giá trị
+let n = +prompt('nhập n');
+while (n <= 0 || n >= 20) {
+    alert('nhập lại giá trị đúng');
+    n = +prompt('nhập n');
+}
+let mang = new Array(n);
+for (let i = 0; i < mang.length; i++) {
+    mang[i] = +prompt(`nhập phần tử thứ : ${i}`);
+}
+alert(mang);
+</script>
+</body>
+</html>

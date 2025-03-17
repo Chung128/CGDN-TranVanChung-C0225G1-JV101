@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>cách đảo ngược mà không dùng reverse.</title>
+</head>
+<body>
+<script>
+  // let arr=[10,20,30,40,50];
+  // alert(arr);
+  // for (let i = 0; i <arr.length/2 ; i++) {
+  //     let a =arr[i];
+  //     arr[i]=arr[arr.length-1-i];
+  //     arr[arr.length-1-i]=a;
+  //
+  // }alert(arr) // thầy chỉ cách đảo ngược mà không dùng reverse.
+
+
+  //cachs này của Vĩnh
+  let arr=[10,20,30,40,50];
+  alert(arr);
+  let a=0;
+  let b =arr.length-1;
+  for (let i = 0; i <arr.length/2 ; i++) {
+    a=arr[i];
+    arr[i]=arr[b];
+    arr[b]=a;
+    b--;
+  }alert(arr)
+</script>
+</body>
+</html>

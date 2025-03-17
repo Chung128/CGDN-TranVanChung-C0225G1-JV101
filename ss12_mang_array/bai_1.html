@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Khởi tạo 1 mảng số nguyên</title>
+</head>
+<body>
+<script>
+    let mang = new Array(10);
+    let lonHon = []; //dử dụng mảng trống để lưu giá trj mỗi lần duyệt qua
+    for (let i = 0; i < mang.length; i++) {
+        mang[i] = +prompt(`nhập phần tử thứ : ${i} `);
+        if (mang[i] >= 10) {
+            lonHon.push(mang[i]); //dùng puss để đẩy từng giá trị vào cuối sau mỗi lần duyệt
+        }
+    }
+    alert(lonHon);
+</script>
+</body>
+</html>
