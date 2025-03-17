@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>khởi tạo số nguyên và đảo ngược</title>
+</head>
+<body>
+<script>
+    let n = +prompt('nhập số:');
+    let mang = new Array(n);
+    for (let i = 0; i < n; i++) {
+        mang[i] = +prompt(`nhập giá trị ${i}`);
+    }
+    mang.reverse();
+    alert(mang);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hiển thị giá trị lớn nhất và giá trị trung bình</title>
+</head>
+<body>
+<script>
+    let n = +prompt('nhập số:');
+    let mang = new Array(n);
+    for (let i = 0; i < n; i++) {
+        mang[i] = +prompt(`nhập giá trị số ${i}`);
+    }
+    let lonNhat = 0;
+    let tong = 0;
+    for (let i = 0; i < n; i++) {
+        tong += mang[i];
+        if (lonNhat < mang[i]) {
+            lonNhat = mang[i];
+        }
+    }
+    let trungBinh = tong / n
+    alert(`giá trị lớn nhất là : ${lonNhat}`);
+    alert(`giá trị trung bình là : ${trungBinh}`);
+</script>
+</body>
+</html>

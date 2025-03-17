@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đếm số nguyên âm trong chuỗi</title>
+</head>
+<body>
+<script>
+    let n = +prompt('nhập số:')
+    let mang = new Array(n);
+    for (let i = 0; i < n; i++) {
+        mang[i] = +prompt(`Nhập giá trị thứ ${i}`)
+    }
+    let soAm = 0;
+    for (let i = 0; i < n; i++) {
+        if (mang[i] < 0) {
+            soAm++;
+        }
+    }
+    alert(soAm);
+</script>
+</body>
+</html>
