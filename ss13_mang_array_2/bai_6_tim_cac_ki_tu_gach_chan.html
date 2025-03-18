@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tìm và thay thế dấu - thành "_"</title>
+</head>
+<body>
+<script>
+    let n = +prompt('nhập số n');
+    let mang = new Array(n);
+    for (let i = 0; i < mang.length; i++) {
+        mang[i] = prompt(`Nhập giá trị thứ ${i}`)
+    }
+    for (let i = 0; i < mang.length; i++) {
+        if (mang[i] === "-") {
+            mang.splice(i, 1, "_");
+        }
+    }
+    alert(mang);
+</script>
+</body>
+</html>

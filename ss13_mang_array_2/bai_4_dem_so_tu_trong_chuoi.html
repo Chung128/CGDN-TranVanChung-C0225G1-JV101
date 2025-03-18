@@ -7,10 +7,14 @@
 <body>
 <script>
     let chuoi = prompt('nhập vào:');
-    let mang = new Array(chuoi);
-    for (let i = 0; i < mang.length; i++) {
+    let soTu = chuoi.split(" ");
+    let demSo = 0;
+    for (let i = 0; i < soTu.length; i++) {
+        if (soTu[i] !== "") {
+            demSo++;
+        }
     }
-
+    alert(`Trong chuỗi ${chuoi} có ${demSo} từ.`);
 </script>
 </body>
 </html>
