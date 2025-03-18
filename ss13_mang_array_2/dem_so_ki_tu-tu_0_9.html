@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đếm kí tự từ 0-9</title>
+</head>
+<body>
+<script>
+    let n = +prompt('Nhập số kí tự');
+    let mang = new Array(n);
+    for (let i = 0; i < mang.length; i++) {
+        mang[i] = prompt(`Nhập giá trị ${i}`);
+    }
+    let demSo = 0;
+    for (let i = 0; i < mang.length; i++) {
+        if (mang[i] >= 0 && mang[i] <= 9) {
+            demSo++;
+        }
+    }
+    alert(`có ${demSo} số từ 0-9`);
+</script>
+</body>
+</html>

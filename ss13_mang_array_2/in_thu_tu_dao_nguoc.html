@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>in các kí tự theo thứ tự đảo ngược</title>
+</head>
+<body>
+<script>
+    let kiTu = +prompt('Nhập số kí tự :');
+    let mang = new Array(kiTu);
+    for (let i = 0; i < mang.length; i++) {
+        mang[i] = prompt(`Nhập giá trị số ${i}`);
+        mang.reverse()
+    }
+    alert(mang.join(""));
+</script>
+</body>
+</html>

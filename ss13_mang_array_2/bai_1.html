@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let row = +prompt('nhập số hàng:');
+    let cols = +prompt('nhập số cột :');
+    let arr = new Array(row)
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = new Array(cols);
+        for (let j = 0; j < arr[i].length; j++) {
+            arr[i][j] = +prompt(`nhập giá trị ở cột ${i} và hàng ${j}`);
+            document.write(arr[i][j]);
+        }
+        document.write('<br>');
+    }
+</script>
+</body>
+</html>

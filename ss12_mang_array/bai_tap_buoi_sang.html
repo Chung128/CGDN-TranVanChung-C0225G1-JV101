@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài dễ</title>
+</head>
+<body>
+<script>
+    //đếm xme có bao nhiêu số chính phương
+    let n = +prompt('nhập số');
+    mang = new Array(n);
+    for (let i = 0; i < mang.length; i++) {
+        if (n <= 0 || n >= 20) {
+            alert('nhập lại giá trị đúng');
+            n = +prompt('nhập số');
+        }
+    }
+    for (let i = 0; i < n; i++) {
+        mang[i] = +prompt(`nhập giá trị thứ : ${i}`);
+    }
+    alert(mang);
+    // let tong = 0;
+    let chinhPhuong = 0;
+    for (let i = 0; i < mang.length; i++) {
+        if (Math.sqrt(mang[i]) % 1 === 0) {
+            chinhPhuong++;
+        }
+    }
+    alert(chinhPhuong);
+//nhập 20 số tính tổng các số vị trí chẵn và chia hết cho 3
+    // for (let i = 0; i < mang.length; i++) {
+    //     if (i % 2 === 0 && mang[i] % 3 === 0) {
+    //         tong += mang[i];
+    //     }
+    // }
+    // alert(tong);
+
+</script>
+</body>
+</html>
