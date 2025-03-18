@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+<input type="text" id="nhap" placeholder="Nhập tiếng anh">
+<button onclick="dich()">Dịch</button>
+<h2 id="xuat"></h2>
+<script>
+    function dich() {
+        let nhap = document.getElementById("nhap").value;
+        let tiengAnh = ["chicken", "dog", "cat", "duck", "bird"];
+        let tiengViet = ["congà", "conchó", "conmèo", "convịt", "conchim"];
+        for (let i = 0; i < tiengAnh.length; i++) {
+            if (tiengAnh[i] === nhap) {
+                document.getElementById('xuat').innerHTML = tiengViet[i];
+                return;
+            } else {
+                document.getElementById('xuat').innerHTML = `Không tìm thấy!`
+            }
+        }
+    }
+
+</script>
+</body>
+</html>
