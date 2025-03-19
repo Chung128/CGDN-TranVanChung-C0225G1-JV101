@@ -5,34 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6538ef9a-978d-462a-b71f-78fca804f6b8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ss14_ham/bai_1_tao_ham_hien_xin_chao.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14_ham/bai_2_tang_gia_tri_doi_so_hien_ket_qua.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14_ham/bai_3_tao_ham_hai_tham_so.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14_ham/bai_4_them_alert_vao_doan_ma.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14_ham/bai_5_nhap_sao_ra_chom_sao.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14_ham/bai_demo_cua_thay.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14_ham/chuyen_doi_met_va_feet.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14_ham/ham_kiem_tra_so_nguyen_to.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14_ham/thuc_hanh_chuyen_doi_nhiet_do.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14_ham/thuc_hanh_goi_va_tao_ham.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss10_cau_truc_lap_1/bai_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss10_cau_truc_lap_1/tang_giam_nhiet_do.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss10_cau_truc_lap_1/bai_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss10_cau_truc_lap_1/in_20_so_fibo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss10_cau_truc_lap_1/bai_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss10_cau_truc_lap_1/tim_so_fibo_dau_tien_chia_het_cho_5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss10_cau_truc_lap_1/bai_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss10_cau_truc_lap_1/tong_20_so_fibonacci_dau_tien.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss10_cau_truc_lap_1/bai_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss10_cau_truc_lap_1/tong_30_so_dau_tien_chia_het_cho_7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss10_cau_truc_lap_1/bai_7.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss10_cau_truc_lap_1/fizz_buzz.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss10_cau_truc_lap_1/bai_8.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss10_cau_truc_lap_1/game_doan_so_lon_be_hon.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/in_day_fibonacci.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/tinh_giai_thua.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/hinh_tam_giac_dau_sao.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/hinh_chu_nhat_dau_sao.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/tinh_lai_kep.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_tap_lam_them_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/tim_so_ngay_trong_thang_nam_nhuan.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_tap_lam_them_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/tinh_15_tru_1_tren_giai_thua.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_tap_lam_them_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/tinh_1_tren_giai_thua.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_tap_them.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/thap_dau_sao.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bài_tap_lam_them_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/tinh_tong1_tren_i_cong1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss12_mang_array/bai_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss12_mang_array/bai_1_hien_thi_co_bao_nhieu_so_lon_hon_10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss12_mang_array/bai_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss12_mang_array/bai_2_hien_thi so_lon_nhat_va_vi_tri.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss12_mang_array/bai_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss12_mang_array/bai_3_gia tri_lon_nhat_va_trung_binh.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss12_mang_array/bai_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss12_mang_array/bai_4_nhap_mang_va_dao_nguoc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss12_mang_array/bai_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss12_mang_array/bai_5_dem_so_am_trong_chuoi.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss12_mang_array/bai_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss12_mang_array/bai_6_tim_v_co_thuoc_mang_hay_khong.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss12_mang_array/bai_7.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss12_mang_array/bai_7_tim_v_và _xoa_v.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss12_mang_array/bai_8.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss12_mang_array/bai_8_sap_xep_mang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss12_mang_array/bai_9.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss12_mang_array/bai_9_noi_2_mang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss12_mang_array/su_dung_cac_ham_cua_mang/bai_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss12_mang_array/su_dung_cac_ham_cua_mang/bai_3.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,27 +43,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.bai_tap_lam_tap_2.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.bai_tap_lam_them_2.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.bai_tap_lam_them_4.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.bai_tap_lam_them_5.html.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/codegym/module1/ss4_git_html&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/codegym/module1/src/main.js&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.bai_5_nhap_sao_ra_chom_sao.html.executor": "Run",
+    "JavaScript Debug.bai_tap_lam_tap_2.html.executor": "Debug",
+    "JavaScript Debug.bai_tap_lam_them_2.html.executor": "Debug",
+    "JavaScript Debug.bai_tap_lam_them_4.html.executor": "Debug",
+    "JavaScript Debug.bai_tap_lam_them_5.html.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/codegym/module1/ss4_git_html",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "D:/codegym/module1/src/main.js",
+    "settings.editor.selected.configurable": "preferences.editor",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\codegym\module1\ss4_git_html" />
@@ -124,7 +108,8 @@
       <workItem from="1742180440513" duration="14545000" />
       <workItem from="1742198150521" duration="20622000" />
       <workItem from="1742260954446" duration="26566000" />
-      <workItem from="1742302777899" duration="3837000" />
+      <workItem from="1742302777899" duration="3999000" />
+      <workItem from="1742347862569" duration="21554000" />
     </task>
     <servers />
   </component>

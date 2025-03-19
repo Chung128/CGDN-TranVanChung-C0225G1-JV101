@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi mét sang feet và ngược lại</title>
+</head>
+<body>
+<script>
+    let feet = +prompt("Nhập số feet");
+    feetSangMet(feet);
+    let met = +prompt("Nhập số mét");
+    alert(`${feet} feet bằng : ${feetSangMet1} mét`);
+    metSangFeet(met);
+    alert(`${met} mét bằng: ${metSangFeet1} feet`);
+
+    function feetSangMet(feet) {
+        feetSangMet1 = 0.305 * feet;
+        return feetSangMet1;
+    }
+
+    function metSangFeet(met) {
+        metSangFeet1 = 3.279 * met
+    }
+</script>
+</body>
+</html>

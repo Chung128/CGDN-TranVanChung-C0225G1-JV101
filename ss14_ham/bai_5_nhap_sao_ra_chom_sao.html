@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nhập tên ngôi sao</title>
+</head>
+<body>
+<script>
+    function timChomSao(sao) {
+        let ngoiSao = ["Polaris", "Aldebaran", "Vega", "Altair", "Dubhe", "Regulus"];
+        let chomSao = ["Ursa Minor", "Taurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+        for (let i = 0; i < ngoiSao.length; i++) {
+            if (ngoiSao[i] === sao) {
+                return chomSao[i];
+            }
+        }
+        return null;
+
+    }
+
+    let nhapNgoiSao = prompt("Nhập tên ngôi sao");
+    let ketQua = timChomSao(nhapNgoiSao);
+    if (ketQua) {
+        alert(ketQua);
+    } else {
+        alert("Không tìm thấy chòm sao");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hàm gồm 2 tham số</title>
+</head>
+<body>
+<script>
+    let n1 = +prompt("Nhập tham số thứ nhất");
+    let n2 = +prompt("Nhập tham số thứ hai");
+    if (tongHaiThamSo(n1, n2)) {
+        alert(`số ${n1} đã lớn hơn số ${n2} `);
+    } else
+        alert(`Tổng của 2 số ${n1} và ${n2} là ${tong} `)
+
+    function tongHaiThamSo(n1, n2) {
+        if (n1 > n2) {
+            return true;
+        } else {
+            tong = n1 + n2;
+            return false;
+        }
+    }
+</script>
+</body>
+</html>
