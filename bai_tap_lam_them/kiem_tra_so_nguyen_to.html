@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let n = +prompt("nhập số giá trị.");
+    let mang = new Array(n);
+    for (let i = 0; i < mang.length; i++) {
+        mang[i] = +prompt(`Nhập giá trị số ${i + 1}`);
+    }
+    timSoNguyenTo(mang);
+
+    function kiemTra(soNguyenTo) {
+        if (soNguyenTo <= 1) {
+            return false;
+        }
+        if (soNguyenTo === 2) {
+            return true;
+        }
+        for (let i = 2; i < soNguyenTo; i++) {
+            if (soNguyenTo % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    function timSoNguyenTo(mangCanTim) {
+        for (let i = 0; i < mangCanTim.length; i++) {
+            if (!kiemTra(mangCanTim[i])) {    //trả về false ngay khi lặp đến số không phải số nguyên tố
+                alert(false);
+                return;
+            }
+        }
+        alert(true);
+    }
+</script>
+</body>
+</html>

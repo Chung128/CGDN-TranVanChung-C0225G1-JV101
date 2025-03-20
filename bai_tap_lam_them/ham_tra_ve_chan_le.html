@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>viết hàm trả về giá trị chẵn lẻ</title>
+</head>
+<body>
+<script>
+    let n = +prompt("nhập số kí tự trong mảng");
+    let mang = new Array(n);
+    for (let i = 0; i < mang.length; i++) {
+        mang[i] = +prompt(`nhập số nguyên thứ ${i + 1}`);
+    }
+    alert(chanLe(mang));
+
+    function chanLe(sochuaBiet) {
+        let chan = false;
+        let le = false;
+        for (let i = 0; i < sochuaBiet.length; i++) {
+            if (sochuaBiet[i] % 2 === 0) {
+                chan = true;
+            } else {
+                le = true;
+            }
+        }
+        if (chan && le) {
+            return -1;
+        } else if (chan) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
+</script>
+</body>
+</html>

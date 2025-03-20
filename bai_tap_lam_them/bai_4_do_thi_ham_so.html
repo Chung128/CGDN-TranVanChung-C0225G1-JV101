@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("nhập số giá trị mảng 1 theo bảng:");
+    let mangA = new Array(a);
+    for (let i = 0; i < mangA.length; i++) {
+        mangA[i] = +prompt(`nhập giá trị thứ ${i + 1} theo bảng :`);
+    }
+    let b = +prompt("nhập số giá trị mảng 2 theo bảng :");
+    let mangB = new Array(b);
+    for (let i = 0; i < mangB.length; i++) {
+        mangB[i] = +prompt(`nhập giá trị thứ ${i + 1} theo bảng:`);
+    }
+    truyenThamSo(mangA, mangB)
+
+    function truyenThamSo(mangA, mangB) {
+        if (mangA.length !== mangB.length) {
+            alert(false);
+            return;
+        }
+        let dem = 0;
+        for (let i = 0; i < mangA.length; i++) {
+            if (mangB[i] === mangA[i] * 2 + 1) {
+                dem++;
+                // alert(true); // nếu làm theo kiểu này thì 7,9 mang 2 dổi chỗ vẩn true
+                // return;
+            }
+        }
+        if (dem === mangA.length) {
+            alert(true);
+        } else {
+            alert(false)
+        }
+        return;
+    }
+</script>
+</body>
+</html>

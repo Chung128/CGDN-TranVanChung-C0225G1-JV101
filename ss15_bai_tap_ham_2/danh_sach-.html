@@ -6,19 +6,45 @@
 </head>
 <body>
 <script>
-
-    let y = prompt("---------Quản lí sinh viên--------\n" +
-                    "1.Hiển thị danh sách sinh viên\n" +
-                    "2.Thêm mới sinh viên \n" +
-                    "3.Xóa sinh viên \n" +
-                    "4.Kết thúc chương trình"
-                );
+    let danhSach = ["1.Trần văn A\n",
+        "2.Nguyễn Văn B"];
+    let chonSo = prompt("---------Quản lí sinh viên--------\n" +
+        "1.Hiển thị danh sách sinh viên\n" +
+        "2.Thêm mới sinh viên \n" +
+        "3.Xóa sinh viên \n" +
+        "4.Kết thúc chương trình"
+    );
+    switch (chonSo) {
+        case "1":
+            quanLiSinhVien();
+            break;
+        case "2":
+            themSinhVien();
+            // alert("ok")
+            break;
+        case "3":
+            xoaSinhVien();
+        case "4":
+            confirm("Bạn có muốn kết thúc chương trình không?");
+    }
 
     function quanLiSinhVien() {
-        let ten = ["---------Danh sách sinh viên--------\n",
-            "1.Trần văn A\n",
-            "2.Nguyễn Văn B"];
+        // for (let i = 0; i < danhSach.length; i++) {
+           alert(danhSach.join(""))
+        // }
+    }
 
+    // quanLiSinhVien(danhSach)
+    function themSinhVien() {
+        let them = prompt('nhập tn sinh viên');
+        danhSach.push(them);
+        quanLiSinhVien();
+    }
+
+    // quanLiSinhVien(danhSach)
+    function xoaSinhVien() {
+
+    }
 </script>
 </body>
 </html>
