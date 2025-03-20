@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra kí tự trong mang</title>
+</head>
+<body>
+<script>
+    let kiTu = prompt("nhập kí tự.");
+    let n = +prompt("số giá trị trong mảng:");
+    let mang = new Array(n);
+    for (let i = 0; i < mang.length; i++) {
+        mang[i] = prompt(`Nhập giá trị ${i}`);
+    }
+
+    function kiemTra(kiTu, mang) {
+        let dem = 0;
+        for (let i = 0; i < mang.length; i++) {
+            if (kiTu === mang[i]) {
+                dem++;
+            }
+            if (dem === 0) {
+                return -1;
+            }
+        }
+        return dem;
+    }
+
+    let ketQua = kiemTra(kiTu, mang);
+    alert(ketQua);
+</script>
+</body>
+</html>

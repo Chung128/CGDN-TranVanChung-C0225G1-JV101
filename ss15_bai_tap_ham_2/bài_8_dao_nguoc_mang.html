@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đảo ngược mảng</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Nhập số giá trị trong mảng");
+    let mang = new Array(n);
+    for (let i = 0; i < mang.length; i++) {
+        mang[i] = prompt(`Nhập giá trị sô ${i}`);
+    }
+
+    function daoNguocMang() {
+        mang.reverse();
+        return mang;
+    }
+
+    let ketQua = daoNguocMang();
+    alert(ketQua);
+</script>
+</body>
+</html>

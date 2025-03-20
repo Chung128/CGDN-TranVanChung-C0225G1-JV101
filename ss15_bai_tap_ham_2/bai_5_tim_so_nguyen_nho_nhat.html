@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm só nguyên nhỏ nhất</title>
+</head>
+<body>
+<script>
+    function soNhoNhat(n, m, o) {
+        let nhoNhat = n;
+        if (m < nhoNhat) {
+            nhoNhat = m;
+        }
+        if (o < nhoNhat) {
+            nhoNhat = o;
+        }
+        return nhoNhat;
+    }
+
+    let n = +prompt("Nhập số nguyên bất kì");
+    let m = +prompt("Nhập số nguyên bất kì");
+    let o = +prompt("Nhập số nguyên bất kì");
+    let ketQua = soNhoNhat(n);
+    alert(`số nhỏ nhất là: ${ketQua}`);
+</script>
+</body>
+</html>

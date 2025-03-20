@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lí sản phẩm</title>
+</head>
+<style>
+    button {
+        background-color: green;
+        color: white;
+    }
+
+    fieldset {
+        width: 300px;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+</style>
+<body>
+<h2> Thêm mới sản phẩm</h2>
+<fieldset>
+    <input type="text" id="nhapTenSanPham" placeholder="Tên sản phẩm mới.">
+    <button onclick="themMoi()">Thêm</button>
+</fieldset>
+<h2>Hiển thị tất cả sản phẩm</h2>
+<p id="soSanPham"></p>
+<p id="dauRa"></p>
+<!--<table border=1px;>-->
+<!--    <tr>-->
+<!--        <th>Tên sản phẩm</th>-->
+<!--        <th>sản phẩm</th>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Nokia</td>-->
+<!--        <td>Samsung</td>-->
+<!--    </tr>-->
+<!--</table>-->
+<!--cách thông thường tạo bảng để chuyển sang bảng nhứ dưới-->
+<script>
+    let danhSachSanPham = ["Samsung", "Nokia", "Iphone"];
+    hienThiSanPham(danhSachSanPham);
+    tongSanPham(danhSachSanPham);
+
+    function themMoi() {
+        let sanPhamMoi = document.getElementById("nhapTenSanPham").value;
+        if (sanPhamMoi !== "") {
+            danhSachSanPham.push(sanPhamMoi);
+        } else {
+            alert("Bạn có muốn nhập lại không?");
+        }
+        hienThiSanPham(danhSachSanPham);
+        tongSanPham(danhSachSanPham);
+    }
+
+    function hienThiSanPham(danhSach) {
+        let bang = `<table border=1px;>
+                    <tr>
+                        <th>số thứ tự</th>
+                        <th>sản phẩm</th>
+                        <th>xóa </th>
+                        <th>thêm</th>
+                    </tr>`;
+        for (let i = 0; i < danhSach.length; i++) {
+            bang += `<tr>
+                    <td>${i + 1}</td>
+                    <td>${danhSach[i]}</td>
+                    <td><button onclick="suaSanPham(${i})" >Sửa</button></td>
+                    <td><button id ="hang" onclick="xoaSanPham(${i})">Xóa</button> </td>
+                </tr>`
+        }
+        document.getElementById("dauRa").innerHTML = bang;
+    }
+
+    function xoaSanPham(thuTu) {
+        let cokhong = confirm(`Bạn có muốn xóa ${danhSachSanPham[thuTu]} không`);
+        if (cokhong === true) {
+            danhSachSanPham.splice(thuTu, 1);
+        }
+        hienThiSanPham(danhSachSanPham);
+        tongSanPham(danhSachSanPham);
+    }
+
+    function suaSanPham(thuTuu) {
+        let khongCo = confirm(`Bạn có muốn sửa ${danhSachSanPham[thuTuu]} không.`);
+        if (khongCo === true) {
+            let sua = prompt("Nhập vào tên cần sửa");
+            danhSachSanPham[thuTuu] = sua;
+        }
+        hienThiSanPham(danhSachSanPham);
+    }
+
+    function tongSanPham(dem) {
+        let demSo = dem.length;
+        document.getElementById("soSanPham").innerHTML = `Tổng số sản phẩm: ${demSo}`;
+    }
+</script>
+</body>
+</html>

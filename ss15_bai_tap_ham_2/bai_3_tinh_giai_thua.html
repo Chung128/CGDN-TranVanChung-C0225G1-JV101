@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giai thừa</title>
+</head>
+<body>
+<script>
+    function tinhGiaiThua(soN) {
+        let giaiThua = 1;
+        for (let i = 1; i <= soN; i++) {
+            giaiThua *= i;
+        }
+        return giaiThua;
+    }
+
+    let n = +prompt("nhập số nguyên bất kì .");
+    let giaiThua1 = tinhGiaiThua(n);
+    alert(giaiThua1);
+</script>
+</body>
+</html>

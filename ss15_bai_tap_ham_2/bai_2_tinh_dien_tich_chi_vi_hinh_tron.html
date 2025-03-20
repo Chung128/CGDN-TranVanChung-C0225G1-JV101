@@ -8,12 +8,21 @@
 <script>
     let r = +prompt("Nhập bán kính hình tròn.");
     const pi = 3.14159;
-    let dienTich1 =dienTich(r);
-    alert(dienTich1);
 
-    function dienTich(hinhTron) {
-        return  pi * r * r;
+
+    function tinhDienTich(banKinh) {
+        return pi * banKinh * banKinh;
     }
+
+    let dienTich1 = tinhDienTich(r);
+    alert(`Diện tích hình tròn có bán kính ${r} là: ${dienTich1}`);
+
+    function tinhChuVi(banKinh) {
+        return pi * banKinh * 2;
+    }
+
+    let chuVi1 = tinhChuVi(r);
+    alert(`Chu vi hình tròn có bán kính ${r} là: ${chuVi1}`);
 </script>
 </body>
 </html>

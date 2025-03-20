@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đổi chỗ 2 số nguyên</title>
+</head>
+<body>
+<script>
+    let soN = +prompt("Nhập số n");
+    let soM = +prompt("Nhập số m");
+
+    function doiCho(a, b) {
+        let c = a;
+        a = b;
+        b = c;
+        return [a, b];
+    }
+
+    let daDoiCho = doiCho(soN, soM);
+    alert(daDoiCho);
+</script>
+</body>
+</html>

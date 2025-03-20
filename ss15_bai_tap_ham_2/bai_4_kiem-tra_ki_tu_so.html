@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra kí tự số</title>
+</head>
+<body>
+<script>
+    function kiemTra(kiTu) {
+        if (kiTu >= 0 || kiTu < 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    let ngauNhien = prompt("Nhập vào kí tự ngẫu nhiên");
+    if (kiemTra(ngauNhien)) {
+        alert("kí tự nhập vào là kí tự sô");
+    } else {
+        alert("kí nhập vào không phải là kí tự số");
+    }
+
+</script>
+</body>
+</html>
