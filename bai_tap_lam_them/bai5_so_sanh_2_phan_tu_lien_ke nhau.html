@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let n = +prompt("nhập số giá trị vào đây :");
+    let mangN = new Array(n);
+    if (n % 2 !== 0) {
+        alert("Nhập lại số giá trị là chẵn");
+    } else {
+        n = +prompt("nhập số giá trị vào đây :");
+    }
+    for (let i = 0; i < mangN.length; i++) {
+
+        mangN[i] = prompt(`nhập giá trị thứ ${i + 1}`);
+    }
+
+    if (kiemTraCapSao(mangN)) {
+        alert("OK")
+    } else {
+        alert("NG")
+    }
+
+    function soSanh(capSo) {
+        if (capSo < capSoi + 1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function kiemTraCapSao(mangCanKiemTra) {
+        for (let i = 0; i < mangCanKiemTra; i++) {
+            if (!soSanh(mangCanKiemTra[i])) {
+                return true;
+            } else {
+                return false
+            }
+        }
+    }
+
+</script>
+</body>
+</html>

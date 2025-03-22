@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let n = +prompt("nhập độ dài n");
+    let mang = new Array(n);
+    for (let i = 0; i < mang.length; i++) {
+        mang[i] = +prompt(`nhập giá trị ${i}`);
+    }
+
+    alert(tinhTong(mang));
+
+    function tinhTong(mangSo) {
+        let tong = 0;
+        for (let i = 0; i < mangSo.length; i++) {
+            if (mangSo[i] % 2 === 0 && mangSo[i] % 10 !== 0) {
+                tong += mangSo[i];
+            }
+        }
+        return tong;
+    }
+
+</script>
+</body>
+</html>

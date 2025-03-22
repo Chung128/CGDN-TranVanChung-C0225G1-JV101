@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nguyên âm uể oải</title>
+</head>
+<body>
+<script>
+
+    let chuoi1 = prompt("nhập chuỗi");
+
+    function kiemTraChuoi(chuoi) {
+        let mang = chuoi.split("");
+        let nguyenAm = ["u", "e", "o", "a", "i"];
+        let ketQua = [];
+        for (let i = 0; i < mang.length; i++) {
+            let kiTu = mang[i].toLowerCase();
+            let coKhong = ketQua.indexOf(kiTu);
+            for (let j = 0; j < mang.length; j++) {
+                if (kiTu === nguyenAm[j] && coKhong === -1) {
+                    ketQua.push(kiTu);
+                }
+            }
+        }
+        return ketQua;
+    }
+
+    alert(kiemTraChuoi(chuoi1));
+</script>
+</body>
+</html>

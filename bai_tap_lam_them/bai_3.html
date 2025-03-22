@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let chuoi = prompt("Nhập chuỗi");
+    let kiTu = prompt("Nhập kí tự");
+    alert(kiemTra(chuoi, kiTu));
+
+    function kiemTra(mangChuoi, kiTu1) {
+        let mang = mangChuoi.split("")
+
+        let n = mang.indexOf(kiTu1);
+        if (n === -1) {
+            return 0;
+        }
+        let xuatHien = 0;
+        for (let i = 0; i < mang.length; i++) {
+            if (mang[i] == kiTu1) {
+                xuatHien++;
+            }
+        }
+        if (xuatHien % 2 === 0) {
+            return 1;
+        } else {
+            return -1;
+        }
+    }
+
+
+    let n = +prompt("nhập độ dài n");
+    let mang = new Array(n);
+    for (let i = 0; i < mang.length; i++) {
+        mang[i] = +prompt(`nhập giá trị ${i}`);
+    }
+    alert(tinhTong(mang));
+
+    function tinhTong(mangSo) {
+        let tong = 0;
+        for (let i = 0; i < mangSo.length; i++) {
+            if (mangSo[i] % 2 === 0 && mangSo[i] % 10 !== 0) {
+                tong += mangSo[i];
+            }
+        }
+        return tong;
+    }
+</script>
+</body>
+</html>

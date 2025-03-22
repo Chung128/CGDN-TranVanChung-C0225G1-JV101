@@ -5,13 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6538ef9a-978d-462a-b71f-78fca804f6b8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/bai_tap_lam_them/bai_4_do_thi_ham_so.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_tap_lam_them/ham_tra_ve_chan_le.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_tap_lam_them/kiem_tra_chu_va_so.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_tap_lam_them/kiem_tra_so_nguyen_to.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_tap_lam_them/bai5_so_sanh_2_phan_tu_lien_ke nhau.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_tap_lam_them/bai6_tach_ki_tu_ueoai.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_tap_lam_them/bai7_xac_nhan_tam_giac.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_tap_lam_them/bai8_bat_dau_bang_chu_in_hoa.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_tap_lam_them/bai_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_tap_lam_them/bai_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_tap_lam_them/bai_4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_tap_lam_them/bai_5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_tap_lam_them_25_bai/bai_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_tap_lam_them_25_bai/bai_3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss15_bai_tap_ham_2/danh_sach-.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss15_bai_tap_ham_2/danh_sach-.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss8_cau_truc_dieu_kien/cau_lenh_swichcase.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss8_cau_truc_dieu_kien/cau_lenh_swichcase.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap_lam_them/bai_4_do_thi_ham_so.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai_tap_lam_them/bai4_do_thi_ham_so.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap_lam_them/ham_tra_ve_chan_le.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai_tap_lam_them/bai1_ham_tra_ve_chan_le.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap_lam_them/kiem_tra_chu_va_so.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai_tap_lam_them/bai2_kiem_tra_chu_va_so.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap_lam_them/kiem_tra_so_nguyen_to.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai_tap_lam_them/bai3_kiem_tra_so_nguyen_to.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +129,9 @@
       <workItem from="1742432031968" duration="30846000" />
       <workItem from="1742470719096" duration="503000" />
       <workItem from="1742471244273" duration="12309000" />
+      <workItem from="1742522031209" duration="25548000" />
+      <workItem from="1742625890312" duration="2181000" />
+      <workItem from="1742628103590" duration="11259000" />
     </task>
     <servers />
   </component>

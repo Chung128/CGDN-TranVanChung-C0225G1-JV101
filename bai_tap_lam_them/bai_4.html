@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--Bài 4	Viết 1 hàm truyền vào 1 tham số (với tham số là một chuỗi), (checkString(str))-->
+<!--"Thực hiện kiểm tra. Nếu số ký tự in Hoa bằng ký tự in thường  thì trả về true. Ngược lại trả về false-->
+<!--"-->
+<body>
+<script>
+    let chuoi = prompt("nhập chuỗi");
+    alert(soSanhHoaThuong(chuoi));
+
+    function soSanhHoaThuong(mang) {
+        let timChuHoa = mang.split('').filter(chu => chu >= "A" && chu <= "Z");
+        let timChuThuong = mang.split('').filter(chu => chu >= "a" && chu <= "z");
+        if (timChuHoa.length === timChuThuong.length) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--Bài 1	Nhập 1 mảng từ bàn phím với độ dài n-->
+<!--Hiện thị mảng sau khi thêm mới các phần tử-->
+<!--Kiểm tra mảng vừa nhập. Nếu số phần tử chẵn bằng số phần tử lẻ thì hiện thị thông báo "OK", nếu không thoả mãn thì hiện thị "NO"-->
+
+<body>
+<script>
+    let n = +prompt("nhập số giá trị");
+    let mang = new Array(n);
+    for (let i = 0; i < mang.length; i++) {
+        mang[i] = +prompt(`nhập giá tr thứ ${i + 1}`);
+    }
+    alert(timChanLe(mang));
+
+    function timChanLe(mang1) {
+        let demChan = 0;
+        let demLe = 0;
+        for (let i = 0; i < mang1.length; i++) {
+            if (mang1[i] % 2 === 0) {
+                demChan++;
+            } else {
+                demLe++;
+            }
+        }
+        if (demChan === demLe) {
+            return "OK";
+        } else {
+            return "NO";
+        }
+    }
+</script>
+</body>
+</html>

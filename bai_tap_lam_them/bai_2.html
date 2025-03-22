@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt("nhập số phần tử n");
+    let mang = new Array(n);
+    for (let i = 0; i < mang.length; i++) {
+        mang[i] = +prompt(`Nhập phần tử số ${i}`);
+    }
+    alert(soSanh(mang));
+
+    function soSanh(mang1) {
+        let chiaHet3 = 0;
+        for (let i = 0; i < mang1.length; i++) {
+            if (mang1 % 3 === 0) {
+                chiaHet3++;
+            }
+        }
+        let chiaHet5 = 0;
+        for (let i = 0; i < mang1.length; i++) {
+            if (mang1 % 5 === 0) {
+                chiaHet5++;
+            }
+        }
+        for (let i = 0; i < mang1.length; i++) {
+
+        }
+        //     for (let i = 0; i < soSanhBangNhau.length; i++) {
+        //         if (chiaHet3(soSanhBangNhau[i]) === chiaHetc5(soSanhBangNhau[i])) {
+        //             return true;
+        //         } else {
+        //             return false;
+        //         }
+        //     }
+        // }
+        //
+        // function chiaHet3(so) {
+        //     if (so % 3 === 0) {
+        //         return true;
+        //     }
+        // }
+        //
+        // function chiaHetc5(so5) {
+        //     if (so5 %5=== 0) {
+        //         return true;
+        //     }
+    }
+</script>
+</body>
+</html>
