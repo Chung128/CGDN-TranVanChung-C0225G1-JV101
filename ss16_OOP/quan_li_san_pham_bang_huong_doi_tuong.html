@@ -4,11 +4,30 @@
     <meta charset="UTF-8">
     <title>Quản lí sản phẩm bằng hướng đối tượng</title>
 </head>
-<input type="text" id="themMoi" placeholder="Nhập tên sản phẩm">
-<input type="text" id="themGia" placeholder="Nhập giá sản phẩm">
-<button onclick="themMoi()">Thêm</button>
-<p id="soSanPham"></p>
-<p id="dauRa"></p>
+<style>
+    table {
+        border-collapse: collapse;
+    }
+
+    tr {
+        background-color: sandybrown;
+    }
+
+    button {
+        color: white;
+        background-color: green;
+    }
+
+    body {
+        background-color: pink;
+    }
+</style>
+<fieldset style="width: 450px; text-align: center ">
+    <input type="text" id="themMoi" placeholder="Nhập tên sản phẩm">
+    <input type="text" id="themGia" placeholder="Nhập giá sản phẩm">
+    <button onclick="themMoi()">Thêm</button>
+    <p id="soSanPham"></p>
+    <p id="dauRa"></p></fieldset>
 <body>
 <script>
     class SanPham {
@@ -28,7 +47,7 @@
     function themMoi() {
         let tenSanPham = document.getElementById("themMoi").value;
         let giaSanPham = document.getElementById("themGia").value;
-        let sanPhamMoi = new SanPham(tenSanPham, giaSanPham)
+        let sanPhamMoi = new SanPham(tenSanPham, giaSanPham);
         if (tenSanPham !== "") {
             danhSachSanPham.push(sanPhamMoi);
         } else {
@@ -41,7 +60,7 @@
     function hienThiSanPham(danhSach) {
         let bang = `<table border=1px;>
                     <tr>
-                        <th>số thứ tự</th>
+                        <th>số TT</th>
                         <th>sản phẩm</th>
                         <th>giá sản phẩm</th>
                         <th>xóa </th>
@@ -51,7 +70,7 @@
             bang += `<tr>
                     <td>${i + 1}</td>
                     <td>${danhSach[i].ten}</td>
-                    <td>${danhSach[i].gia}</td>
+                    <td>${danhSach[i].gia} VND</td>
                     <td><button onclick="suaSanPham(${i})" >Sửa</button></td>
                     <td><button id ="hang" onclick="xoaSanPham(${i})">Xóa</button> </td>
                 </tr>`
@@ -60,7 +79,7 @@
     }
 
     function xoaSanPham(thuTu) {
-        let cokhong = confirm(`Bạn có muốn xóa ${danhSachSanPham[thuTu]} không`);
+        let cokhong = confirm(`Bạn có thật sự muốn xóa không`);
         if (cokhong === true) {
             danhSachSanPham.splice(thuTu, 1);
         }
@@ -69,11 +88,11 @@
     }
 
     function suaSanPham(thuTuu) {
-        let khongCo = confirm(`Bạn có muốn sửa ${danhSachSanPham[thuTuu]} không.`);
+        let khongCo = confirm(`Bạn có muốn sửa không.`);
         if (khongCo === true) {
             let suaTen = prompt("Nhập vào tên cần sửa");
             let suaGia = prompt("Nhập vào tên cần sửa");
-            let suaSanPham=new SanPham(suaTen,suaGia);
+            let suaSanPham = new SanPham(suaTen, suaGia);
             danhSachSanPham[thuTuu] = suaSanPham;
         }
         hienThiSanPham(danhSachSanPham);
