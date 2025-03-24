@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--Bài 10	Nhập 1 mảng từ bàn phím với độ dài n-->
+<!--Hiện thị mảng sau khi thêm mới các phần tử-->
+<!--Hiện thị các số chính phương có trong mảng ( Số chính phương là các số ví dụ 1,4,9,16,25,36,49……)-->
+
+<body>
+<script>
+    let n = +prompt("Nhập số n ");
+    let mang = new Array(n);
+    for (let i = 0; i < mang.length; i++) {
+        mang[i] = +prompt(`Nhập giá trị thứ ${i + 1}`);
+    }
+    alert(hienThiSoChinhPhuong(mang));
+
+    function hienThiSoChinhPhuong(mang1) {
+        let b = [];
+        for (let i = 0; i < mang1.length; i++) {
+            let a = Math.sqrt(mang1[i]);
+            if (a % 1 === 0) {
+                b.push(mang1[i]);
+            }
+        }
+        return b;
+    }
+</script>
+</body>
+</html>

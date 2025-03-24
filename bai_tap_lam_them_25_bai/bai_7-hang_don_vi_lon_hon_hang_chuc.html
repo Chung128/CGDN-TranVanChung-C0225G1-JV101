@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--Bài 7	Khai báo  1 mảng số nguyên từ bàn phím với độ dài n.-->
+<!--Nhập các phần tử cho  mảng với  một số nguyên lớn hơn 10 và nhỏ hơn 100.-->
+<!--Hiện thị mảng sau khi thêm mới các phần tử-->
+<!--Viết chương trình hiện thị các phần tử của mảng có hàng đơn vị lớp hơn hàng chục -->
+<!--ví dụ: [11, 12, 21 , 56, 19] => kết quả hiện thị ra 12,56,19-->
+<body>
+<script>
+    let n = +prompt("Nhập độ dài n :");
+    let mang = new Array(n);
+    for (let i = 0; i < mang.length; i++) {
+
+        while (true) {
+            let giaTri = +prompt(`Nhập giá trị thứ ${i}`);
+            if (giaTri < 100 && giaTri > 10) {
+                mang[i] = giaTri
+                break;
+            } else {
+                alert("Nhập lại giá trị đúng lớn hơn 10 và bé hơn 100:");
+            }
+        }
+    }
+    alert(soSanhChucDonvi(mang))
+
+    function soSanhChucDonvi(mangGan) {
+
+        let thoaMan = [];
+        for (let i = 0; i < mangGan.length; i++) {
+            let soDonVi = mangGan[i] % 10;
+            let hangChuc = Math.floor(mangGan[i] / 10);
+            if (soDonVi > hangChuc) {
+                thoaMan.push(mangGan[i]);
+            }
+        }
+        return thoaMan;
+    }
+</script>
+</body>
+</html>

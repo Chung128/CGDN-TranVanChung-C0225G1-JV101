@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lớp mô tả hình chữ nhật</title>
+</head>
+<body>
+<script>
+    class HinhChuNhat {
+        constructor(length, width) {
+            this.length = length;
+            this.width = width;
+        }
+
+        tinhDienTich() {
+            let dienTich = this.length * this.width;
+            console.log(`diện tích của hình cữ nhật là ${dienTich} `);
+        }
+
+        tinhChuVi() {
+            let chuVi = (this.length + this.width) * 2;
+            console.log(`diện tích của hình cữ nhật là ${chuVi} `);
+        }
+
+    }
+
+    let hcn = new HinhChuNhat(23, 20);
+    console.log(hcn.length);
+    console.log(hcn.width);
+    hcn.tinhDienTich();
+    hcn.tinhChuVi()
+</script>
+</body>
+</html>

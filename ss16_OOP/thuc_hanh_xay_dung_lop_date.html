@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp date</title>
+</head>
+<body>
+<script>
+
+    class MyDate {
+        constructor(day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+
+        getDay() {
+            return this.day;
+        }
+
+        getMonth() {
+            return this.month;
+        }
+
+        getYear() {
+            return this.year;
+        }
+
+        setDay(day) {
+            this.day = day;
+        }
+
+        setMonth(thang) {
+            this.month = thang;
+        }
+
+        setYear(nam) {
+            this.year = nam;
+        }
+    }
+
+    let lich = new MyDate(24, 3, 2025);
+    let ngay = lich.day;
+    let thang = lich.month;
+    let nam = lich.year;
+    console.log(`${ngay}/${thang}/${nam} `)
+    // lich.setDay(23);      // set : đổi ngày thành 15 trong hàm bao đóng
+    // lich.setMonth(06);
+    // lich.setYear(2025);
+    // let ngay = lich.getDay();    //get lấy giá trị trong hàm bao đóng
+    // let thang = lich.getMonth();
+    // let nam = lich.getYear();
+    // console.log(`${ngay}/${thang}/${nam} `);
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--	Bài 13	Nhập 1 mảng từ bàn phím với độ dài n-->
+<!--Hiện thị mảng sau khi thêm mới các phần tử-->
+<!--Kiểm tra mảng vừa nhập. Nếu tất cả các phần tử trong mảng là số nguyên tố
+thì hiện thị thông báo "OK",
+ nếu không thoả mãn thì hiện thị "NO"-->
+<body>
+<script>
+    let n = +prompt("Nhập số phần tử n");
+    let mang = new Array(n);
+    for (let i = 0; i < mang.length; i++) {
+        mang[i] = +prompt(`Nhập giá trị thứ ${i + 1}`);
+    }
+    alert(hienThi(mang));
+
+    function timSoNguyenTo(timSo) {
+        if (timSo <= 1) {
+            return false;
+        }
+        if (timSo === 2) {
+            return true;
+        }
+        for (let i = 2; i < timSo; i++) {
+            if (timSo % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    function hienThi(mang1) {
+        for (let i = 0; i < mang1.length; i++) {
+            if (!timSoNguyenTo(mang1[i])) {
+                return "NO";
+            }
+        }
+        return "OK";
+    }
+</script>
+</body>
+</html>

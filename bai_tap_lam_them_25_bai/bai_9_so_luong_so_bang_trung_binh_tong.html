@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--Bài 9	Nhập 1 mảng từ bàn phím với độ dài n-->
+<!--Hiện thị mảng sau khi thêm mới các phần tử-->
+<!--"Đếm số lượng số có giá trị bằng giá trinh trung bình của mảng.-->
+<!--"-->
+<!--"-->
+<!--Ví dụ [1,2,2,3,3,5,4,4] -->
+<!--=> số lượng số bằng với giá trị trung bình của các phần tử trong mảng  là 2 -->
+<!--( vì giá trị trung bình các phần tử trong mảng là 3=> số 3 xuất hiện 2 lần)"-->
+
+<body>
+<script>
+    let n = +prompt("Nhập số n");
+    let mang = new Array(n);
+    for (let i = 0; i < mang.length; i++) {
+        mang[i] = +prompt(`nhập giá trị thứ ${i + 1}`);
+    }
+    alert(demSoLuong(mang, n));
+
+    function demSoLuong(mang1) {
+        let tong = 0;
+        for (let i = 0; i < mang1.length; i++) {
+            tong += mang1[i];
+        }
+        let trungBinh = tong / mang1.length;
+        let demSoLan = 0;
+        for (let i = 0; i < mang1.length; i++) {
+            if (trungBinh === mang1[i]) {
+                demSoLan++;
+            }
+        }
+
+        return `Trung bình các số là ${trungBinh},số ${trungBinh} xuất hiện ${demSoLan} lần `;
+    }
+</script>
+</body>
+</html>

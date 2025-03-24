@@ -11,6 +11,34 @@
 <!--Ví dụ: [1,2,6,7,5,8] => OK ( vì cặp (1,2), (6,7),(5,8) thoả mãn vì  phần tử thứ nhất nhỏ hơn phần tử thứ 2-->
 <!--[1,2,6,7,8,4]=> NO vì cặp (8,4) không thoả mãn)-->
 <body>
+<script>
+    let n;
+    while (true) {
+        n = +prompt("Nhập số giá trị :");
+        if (n % 2 === 0) {
+            break;
+        }
+        alert("Nhập lại số giá trị đúng:");
+    }
+    let mang = new Array(n);
+    for (let i = 0; i < mang.length; i++) {
+        mang[i] = +prompt(`Nhập giá trị số ${i + 1}`);
+    }
+    alert(soSanhPhanTu(mang));
 
+    function soSanhPhanTu(mang1) {
+        let dem = 0;
+        for (let i = 0; i < mang1.length; i += 2) {
+            if (mang1[i] < mang1[i + 1]) {
+                dem++;
+            }
+        }
+        if (mang1.length / 2 === dem) {
+            return "OK";
+        } else {
+            return "NO";
+        }
+    }
+</script>
 </body>
 </html>

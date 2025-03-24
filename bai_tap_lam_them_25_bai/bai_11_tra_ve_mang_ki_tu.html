@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--Bài 11	Viết 1 hàm truyền vào 1 tham số (với tham số là một chuỗi), (checkString(str))-->
+<!--"Hàm trả về mảng các ký tự không phải là số[0,….9] và không phải là ký tự alphabet[a…z,A,…Z]-->
+<!--"-->
+<body>
+<script>
+    let n = prompt("nhập chuỗi");
+    let mang = n.split("");
+    alert(kiemTraChuoi(mang));
+
+    function kiemTraChuoi(mang1) {
+        let mangMoi = [];
+        for (let i = 0; i < mang1.length; i++) {
+            if (isNaN(mang1[i]) && mang1[i].toLowerCase() === mang1[i].toUpperCase() && mang1[i] !== "") {
+                mangMoi.push(mang1[i])
+            }
+        }
+        return mangMoi;
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp hình tròn</title>
+</head>
+<body>
+<script>
+    class LopHinhTron {
+        constructor(radius, color) {
+            this.radius = radius;
+            this.color = color;
+        }
+
+        getRadius() {
+            return this.radius;
+        }
+
+        getDienTich() {
+            return Math.PI * this.radius * this.radius;
+        }
+    }
+
+    let hinhTron = new LopHinhTron(10, "Xanh");
+    console.log(hinhTron.color)
+    let banKinh = hinhTron.getRadius()
+    let dienTich = hinhTron.getDienTich()
+    console.log(`diện tích hình tròn có bán kính ${banKinh} là : ${dienTich} `);
+</script>
+</body>
+</html>

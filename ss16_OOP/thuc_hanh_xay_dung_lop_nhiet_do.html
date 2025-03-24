@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp nhiệt độ</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(doC) {
+            this.celsius = doC;
+        }
+
+        swapCSangF() {
+            let doF = (this.celsius * 1.8) + 32;
+            return doF;
+        }
+
+        swapCSangK() {
+            let doK = this.celsius + 273.15;
+            return doK;
+        }
+    }
+
+    let doC1 = new Temperature(1);
+    let doF1 = doC1.swapCSangF();
+    let doK1 = doC1.swapCSangK();
+    console.log(`1 độ C bằng : ${doF1} độ F`);
+    console.log(`1 độ C bằng : ${doK1} độ K`);
+</script>
+</body>
+</html>
