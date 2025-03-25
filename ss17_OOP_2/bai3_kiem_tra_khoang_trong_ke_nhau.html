@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let chuoi = prompt("Nhập chuỗi");
+
+    function kiemTraChuoi(mang) {
+        let tachMang = mang.split("");
+        for (let i = 0; i < tachMang.length; i++) {
+            if (tachMang[i] === " " && tachMang[i + 1] === " ") {
+                return true;
+            }
+        }
+    }
+
+    if (kiemTraChuoi(chuoi)) {
+        alert(false);
+    } else {
+        alert(true);
+    }
+    // cách 2
+    // let chuoi = prompt("Nhập chuỗi");
+    //
+    // function kiemTraChuoi(mang) {
+    //     let tachMang = mang.split(" ");
+    //     return !tachMang.includes(""); hàm includes kiểm tra xem có kí tự trống nào trong mảng hay không
+    // }
+    //
+    // alert(kiemTraChuoi(chuoi))
+</script>
+</body>
+</html>

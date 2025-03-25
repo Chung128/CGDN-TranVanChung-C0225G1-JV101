@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class SwitchButton {
+        constructor(trangThai) {
+            this.status = trangThai;
+            this.lamp = null;
+        }
+
+        conectToLamp(e1) {
+            this.lamp = e1;
+
+        }
+
+        switchOff() {
+            this.status = false;
+            this.lamp.turnOff();      //lấy turnoff từ đèn ra để lên đây
+        }
+
+        switchOn() {
+            this.status = true;
+            this.lamp.turnOn();     //Lấy turnOn từ đèn lên để hiển thị
+        }
+
+        getTrangThai() {
+            return this.status ? "bật" : "tắt"
+        }
+    }
+
+    class ElectricLamp {
+        constructor(trangThai) {
+            this.status = trangThai;
+        }
+
+        getStatus() {
+            if (this.status !== false) {
+                return "Đèn mở";
+            } else {
+                return "Đèn tắt";
+            }
+        }
+
+        turnOff() {
+            this.status = false;
+        }
+
+        turnOn() {
+            this.status = true;
+        }
+    }
+
+    let lamp = new ElectricLamp(false);
+    let button = new SwitchButton(lamp, false);   // chỗ này là kết nối lớp đèn sang lớp công tắc
+    button.conectToLamp(lamp);
+    button.switchOn();
+    console.log(`Khi button ${button.getTrangThai()} thì ${lamp.getStatus()}`);
+    button.switchOff();
+    console.log(`Khi button ${button.getTrangThai()} thì ${lamp.getStatus()}`);
+
+</script>
+</body>
+</html>

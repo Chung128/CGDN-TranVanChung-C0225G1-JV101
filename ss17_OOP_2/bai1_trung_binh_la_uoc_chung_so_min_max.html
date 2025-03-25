@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 1</title>
+</head>
+<body>
+<script>
+    let n = +prompt("nhập độ dài n");
+    let mang = new Array(n);
+    for (let i = 0; i < mang.length; i++) {
+        mang[i] = +prompt(`Nhập giá trị thứ ${i + 1}`);
+    }
+    alert(uocChung(mang));
+
+    function uocChung(mang1,) {
+        let tong = 0;
+        for (let i = 0; i < mang1.length; i++) {
+            tong += mang1[i]
+        }
+        let trungBinh = tong / mang1.length;
+        let lonNhat = mang1[0];
+        for (let i = 1; i < mang1.length; i++) {
+            if (lonNhat < mang1[i]) {
+                lonNhat = mang1[i];
+            }
+        }
+        if (trungBinh !== lonNhat) {
+            return false;
+        } else {
+            return true;
+        }
+
+    }
+</script>
+</body>
+</html>

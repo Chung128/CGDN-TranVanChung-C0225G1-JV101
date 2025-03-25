@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lớp mô tả adam và eva</title>
+</head>
+<body>
+<script>
+    class Apple {
+        constructor(donVi) {
+            this.weight = donVi;
+        }
+
+        decrease() {
+            this.weight -= 1;
+        }
+
+        isEmpty() {
+            if (this.weight > 0) {
+                this.weight = true;
+            } else {
+                this.weight = false;
+            }
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+    }
+
+    class AdamEva {
+        constructor(ten, gioiTinh, canNang) {
+            this.name = ten;
+            this.gender = gioiTinh;
+            this.weight = canNang;
+        }
+
+        isMale() {
+            if (this.gender === true) {
+               this.gender=true;
+            } else {
+               this.gender=false;
+            }
+        }
+        checkApple(apple) {
+            if (apple.getWeight()){
+                this.weight=true;
+            }else {
+                this.weight=false;
+            }
+        }
+
+        eatApple(apple1) {
+            if (this.checkApple(apple1)===true){
+                this.weight+=1;
+                return "Ăn ngon quá";
+            }
+        }
+
+        getName() {
+
+        }
+
+        setName(name1) {
+            this.name = name1;
+        }
+
+        getWeight1() {
+
+        }
+
+        setWeight1(weight1) {
+            this.weight = weight1;
+        }
+    }
+    let people1=new AdamEva("Hề",true,50);
+    let people2=new AdamEva("Chúa",false,50);
+    let apple=new Apple(10);
+    people1.eatApple(apple)
+    console.log(`${}`)
+</script>
+</body>
+</html>

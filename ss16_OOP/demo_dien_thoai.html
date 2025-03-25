@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class DienThoai {
+        constructor(pin) {
+            this.trangThai = false;// trang thái đang tắt
+            this.dungLuongPin = dungLuongPin;
+            this.vungNhoSoanTin = "";
+            this.vungNhoTinDen = [];
+            this.vungNhoTinGui = [];
+        }
+
+        getStatus() {
+            return this.trangThai;
+        }
+
+        batTatDienThoai() {
+            this.trangThai = !this.trangThai;
+        }
+
+        sacPin() {
+            if (this.dungLuongPin < 10) {
+                this.dungLuongPin = 100;
+            } else {
+                console.log("chưa cần sạc");
+            }
+
+        }
+
+        nhanTinNhan(text) {
+            this.vungNhoTinDen.push(text)
+        }
+
+        soanTinNhan(text) {
+            this.vungNhoSoanTin = text;
+        }
+
+        guiTinNhan(dienThoai, text) {
+            this.soanTinNhan(text);
+            dienThoai.vungNhoTinDen.push(this.vungNhoSoanTin);
+            this.vungNhoTinGui.push(this.vungNhoSoanTin)
+        }
+
+        // xemTinDaGui() {
+        // for (let i = 0; i < this.vungNhoTinGui.length; i++) {
+        //     console.log((i + 1) + "." + this.vungNhoTinGui[i])
+
+
+        xemTinDaNhan() {
+            for (let i = 0; i < this.vungNhoTinGui.length; i++) {
+                console.log((i + 1) + "." + this.vungNhoTinGui[i])
+            }
+        }
+    }
+
+    let dienThoai1 = new DienThoai(100);
+    let dienThoai2 = new DienThoai(100);
+    dienThoai1.guiTinNhan(dienThoai2, "hello");
+    dienThoai2.xemTinDaNhan()
+</script>
+</body>
+</html>

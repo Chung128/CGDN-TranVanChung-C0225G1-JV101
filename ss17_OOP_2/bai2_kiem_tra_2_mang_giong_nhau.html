@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 2</title>
+</head>
+<body>
+<script>
+    let n = +prompt("nhập số phần tử mảng 1");
+    let m = +prompt("nhập số phần tử mảng 2");
+    let mang1 = new Array(n);
+    let mang2 = new Array(m);
+    for (let i = 0; i < mang1.length; i++) {
+        mang1[i] = +prompt(`Nhập giá trị thứ ${i + 1} mảng 1`);
+    }
+    for (let i = 0; i < mang2.length; i++) {
+        mang2[i] = +prompt(`Nhập giá trị thứ ${i + 1} mảng 2`);
+    }
+    alert(kiemTra2Chuoi(mang1, mang2))
+
+    function kiemTra2Chuoi(mang1, mang2) {
+        if (mang1.length !== mang2.length) {
+            return false
+        } else {
+            for (let i = 0; i < mang1.length; i++) {
+                if (mang1[i] == mang2[i]) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+</script>
+</body>
+</html>
