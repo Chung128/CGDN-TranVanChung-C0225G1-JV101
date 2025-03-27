@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6538ef9a-978d-462a-b71f-78fca804f6b8" name="Changes" comment="" />
+    <list default="true" id="6538ef9a-978d-462a-b71f-78fca804f6b8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/case_study/yeu_cau_1/bai_1_doc_thanh_chuoi_999.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap_lam_them_25_bai/bai_7-hang_don_vi_lon_hon_hang_chuc.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai_tap_lam_them_25_bai/bai_7-hang_don_vi_lon_hon_hang_chuc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/yeu_cau_2/in_so_1234_thanh_chu.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/yeu_cau_2/in_so_1234_thanh_chu.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -124,11 +129,25 @@
       <workItem from="1742975656108" duration="6417000" />
       <workItem from="1743001546158" duration="6846000" />
       <workItem from="1743036763252" duration="28797000" />
+      <workItem from="1743071887850" duration="395000" />
+      <workItem from="1743079888557" duration="3334000" />
+      <workItem from="1743083768905" duration="10573000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

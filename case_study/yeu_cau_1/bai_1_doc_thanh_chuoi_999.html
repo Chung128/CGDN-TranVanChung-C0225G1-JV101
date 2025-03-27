@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 2: Viết chương trình đọc số thành chuỗi-->
+<!--+ Kiểm tra dữ liệu nhập vào-->
+<!-- -	Phải là số và là số nguyên dương-->
+<!-- -	Phải nhỏ hơn 999-->
+<!--+ Thực hiện: đọc số thành chuỗi sang tiếng việt-->
+
+<script>
+    let donVi = ["một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín"];
+    alert(demSo(donVi))
+
+    function demSo(hangDonVi) {
+        let n;
+        while (true) {
+            n = +prompt("nhập số cần đọc");
+            if (n <= 999 && n >= 0) {
+                break;
+            } else {
+                alert("nhập lại số phù hợp");
+            }
+        }
+        if (n === 0) {
+            return "Không";
+        }
+        let tram1 = Math.floor(n / 100);
+        let chuc1 = Math.floor((n % 100) / 10);
+        let donVi1 = n % 10;
+        let luuSo = [];
+        if (tram1 > 0) {
+            luuSo.push(`${hangDonVi[tram1 - 1]} trăm`);
+        }
+        if (chuc1 > 1) {
+            luuSo.push(`${hangDonVi[chuc1 - 1]} mươi`);
+        } else if (chuc1 === 1) {
+            luuSo.push("mười");
+        }
+        if (donVi1 > 1) {
+            luuSo.push(hangDonVi[donVi1 - 1]);
+        } else if (chuc1 === 0 || chuc1 === 1) {
+            luuSo.push(hangDonVi[donVi1 - 1]);
+        } else {
+            luuSo.push("mốt")
+        }
+        return luuSo.join(" ");
+    }
+</script>
+</body>
+</html>

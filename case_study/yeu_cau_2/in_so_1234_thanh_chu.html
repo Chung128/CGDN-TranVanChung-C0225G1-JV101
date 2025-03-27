@@ -8,7 +8,22 @@
 <!--Viết một chương trình nhập một số từ bàn phím và in ra màn hình bằng chữ. -->
 <!--Ví dụ 1234, kết quả in ra màn hình là một hai ba bốn.-->
 <script>
-    let chu=["không","một","hai"."ba","bốn","năm","sáu","bảy","tám","chín"];
+    let chu = ["không", "một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín"];
+    // let so=[0,1,2,3,4,5,6,7,8,9];
+    let nhapSo = +prompt("nhập số vào");
+    alert(inRaChu(chu, nhapSo));
+
+    function inRaChu(chu1, nhap) {
+        let tachSO = nhap.toString();    //chuyển số nhập vào thành chuỗi
+        // alert(tachSO);
+        let luuChu = "";
+        let chiSo;
+        for (let i = 0; i < tachSO.length; i++) {
+            chiSo = parseInt(tachSO[i]);          //lấy số nhập vào
+            luuChu += chu1[chiSo] + " ";           //chuyển thành chỉ số trong mảng chữ
+        }
+        return luuChu;
+    }
 </script>
 </body>
 </html>
