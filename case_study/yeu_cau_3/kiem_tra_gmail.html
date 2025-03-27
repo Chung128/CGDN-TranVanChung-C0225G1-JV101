@@ -40,13 +40,13 @@
         }
         let tach1 = tachRa1[1].split("");
         for (let i = 0; i < tach1.length; i++) {
-            if (tachRa1[1].length < 3 || tachRa1[1].length > 10 || tach1[i] < "a" || tach1[i] > "z") {
+            if (tach1[i].length < 3 || tach1[i].length > 10 || tach1[i] < "a" || tach1[i] > "z") {
                 return false;
             }
         }
         let tach2 = tachRa1[1].split("");
         for (let i = 0; i < tach2.length; i++) {
-            if (tachRa1[2].length < 3 || tachRa1[2].length > 10 || tach2[i] < "a" || tach2[i] > "z") {
+            if (tach2[i].length < 3 || tach2[i].length > 10 || tach2[i] < "a" || tach2[i] > "z") {
                 return false;
             }
         }
