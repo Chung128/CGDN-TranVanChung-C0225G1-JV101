@@ -7,8 +7,8 @@
 <body>
 <script>
     class Apple {
-        constructor(donVi) {
-            this.weight = donVi;
+        constructor() {
+            this.weight = 10;
         }
 
         decrease() {
@@ -37,28 +37,26 @@
 
         isMale() {
             if (this.gender === true) {
-               this.gender=true;
+                this.gender = true;
             } else {
-               this.gender=false;
+                this.gender = false;
             }
         }
+
         checkApple(apple) {
-            if (apple.getWeight()){
-                this.weight=true;
-            }else {
-                this.weight=false;
+            if (apple.getWeight()) {
+                this.weight = true;
+            } else {
+                this.weight = false;
             }
         }
 
         eatApple(apple1) {
-            if (this.checkApple(apple1)===true){
-                this.weight+=1;
-                return "Ăn ngon quá";
-            }
+
         }
 
         getName() {
-
+            this.getName();
         }
 
         setName(name1) {
@@ -66,18 +64,19 @@
         }
 
         getWeight1() {
-
+            this.weight;
         }
 
         setWeight1(weight1) {
             this.weight = weight1;
         }
     }
-    let people1=new AdamEva("Hề",true,50);
-    let people2=new AdamEva("Chúa",false,50);
-    let apple=new Apple(10);
+
+    let people1 = new AdamEva("Hề", true, 50);
+    let people2 = new AdamEva("Chúa", false, 50);
+    let apple = new Apple(10);
     people1.eatApple(apple)
-    console.log(`${}`)
+    console.log(`${people1}`)
 </script>
 </body>
 </html>

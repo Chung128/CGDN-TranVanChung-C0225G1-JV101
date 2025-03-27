@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--Bài 3: Cho một danh sách các phân số, hãy tìm chỉ số của phân số lớn nhất (đếm từ 0)-->
+<!--Giả định rằng không có các phân số bằng nhau trong tập đầu vào-->
+<!--Ví dụ: numerators = [5, 2, 5] và denominators = [6, 3, 4], thì kết quả maxFraction(numerators, denominators) = 2.-->
+<!--⇨	5/4 là phân số lớn nhất, có chỉ số là 2.-->
+
+<body>
+<script>
+    let n = +prompt("nhập số phần tử mảng 1");
+    let m = +prompt("nhập số phần tử mảng 2");
+    let mang1 = new Array(n);
+    for (let i = 0; i < mang1.length; i++) {
+        mang1[i] = +prompt(`Nhập giá trị thứ ${i + 1} mảng 1`);
+    }
+    let mang2 = new Array(m);
+    for (let i = 0; i < mang2.length; i++) {
+        mang2[i] = +prompt(`Nhập giá trị thứ ${i + 1} mảng 2`);
+    }
+    console.log(timMaxPhanSo(mang1, mang2));
+
+    function timMaxPhanSo(mang11, mang22) {
+        if (mang11.length !== mang22.length) {
+            return false;
+        } else {
+            let dem = [];
+            let lonNhat = mang11[0] / mang22[0];
+            for (let i = 0; i < mang11.length; i++) {
+                if (lonNhat < mang11[i] / mang22[i]) {
+                    lonNhat = mang11[i] / mang22[i];
+                    dem.push(i);
+                }
+            }
+            return `${lonNhat} là phân số lớn nhất, có chỉ số là ${dem}.`;
+        }
+    }
+</script>
+</body>
+</html>

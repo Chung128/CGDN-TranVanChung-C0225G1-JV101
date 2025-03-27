@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let gia = [10, 11, 12, 13, 14, 15];
+    let menu = ["Cafe", "Cam vắt", "Nước ép cà rốt", "nước ép cà chua", "Nước suối", "Nước dừa"];
+    let soLuong = [0, 0, 0, 0, 0, 0];
+    let danhSach1 = "";
+    let vongLap = true;
+    for (let i = 0; i < menu.length; i++) {
+        danhSach1 += `\n${i + 1}  ${menu[i]} : giá ${gia[i]}k`
+    }
+    while (vongLap) {
+        let danhSachChon = "";
+        let tongTien = 0;
+        for (let i = 0; i < soLuong.length; i++) {
+            if (soLuong[i] !== 0) {
+                danhSachChon += `\n ${menu[i]} : ${soLuong[i]}`;
+                tongTien += soLuong[i] * gia[i];
+            }
+        }
+        let chonMon = +prompt(`---------Menu---------- ---\n`
+            + `Hãy nhập số để chọn đồ uống\n`
+            + `${danhSach1} \n`
+            + `7.Kết thúc\n`
+            + `--------Danh sách đã chọn--------\n`
+            + `                                                          $Tổng tiền= ${tongTien} \n`
+            + `${danhSachChon}`
+        )
+        switch (chonMon) {
+            case 1:
+                tangSoLuong(chonMon);
+                // let sl1 = soLuong[chonMon - 1];        /này a chỉ
+                // sl1++;
+                // soLuong[chonMon - 1] = sl1
+                break;
+            case 2:
+                tangSoLuong(chonMon);
+                // soLuong[chonMon - 1] += 1;           chạy oke nhưng bỏ vào hàm khng ok
+                // danhSachChon += menu[chonMon - 1];
+                break;
+            case 3:
+                tangSoLuong(chonMon);
+                break;
+            case 4:
+                tangSoLuong(chonMon);
+                break;
+            case 5:
+                tangSoLuong(chonMon);
+                break;
+            case 6:
+                tangSoLuong(chonMon);
+                break;
+            case 7:
+                alert(`${danhSachChon} \n Của bạn hết : ${tongTien} k`);
+                vongLap = false;
+                break;
+            default:
+                alert("nhập lại đúng số món");
+        }
+
+    }
+
+    function tangSoLuong(chon) {
+        let sl1 = soLuong[chon - 1];
+        sl1++;
+        soLuong[chon - 1] = sl1;
+    }
+</script>
+</body>
+</html>

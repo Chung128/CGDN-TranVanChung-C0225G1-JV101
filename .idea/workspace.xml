@@ -5,13 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6538ef9a-978d-462a-b71f-78fca804f6b8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ss16_OOP/demo_dien_thoai.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss17_OOP_2/adam_va_eva.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss17_OOP_2/bai1_trung_binh_la_uoc_chung_so_min_max.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss17_OOP_2/bai2_kiem_tra_2_mang_giong_nhau.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss17_OOP_2/bai3_kiem_tra_khoang_trong_ke_nhau.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss17_OOP_2/lop_cong_tac_bong_den.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/yeu_cau_1/he_thong_danh_gia_xep_hang_khach_hang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/yeu_cau_2/in_so_1234_thanh_chu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/yeu_cau_2/menu_do_uong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/yeu_cau_2/tim_phan_so_lon_nhat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/yeu_cau_2/truy_xuat_phan_tu_du_thua.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/yeu_cau_2/xay_dung_mang_b_prefixsums.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/yeu_cau_3/kiem_tra_gmail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap_lam_them_25_bai/bai_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai_tap_lam_them_25_bai/bai_1_kiem_tra_chan_bang_le.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap_lam_them_25_bai/bai_12_dinh_dang_ngay_thang-nam.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai_tap_lam_them_25_bai/bai_12_dinh_dang_ngay_thang-nam.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap_lam_them_25_bai/bai_14_so_sanh_chu_hoa_thuong.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai_tap_lam_them_25_bai/bai_14_so_sanh_chu_hoa_thuong.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap_lam_them_25_bai/bai_15_day_so_fibo.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai_tap_lam_them_25_bai/bai_15_day_so_fibo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap_lam_them_25_bai/bai_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai_tap_lam_them_25_bai/bai_2_so_la_so_chinh_phuong_so_truoc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap_lam_them_25_bai/bai_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai_tap_lam_them_25_bai/bai_3_so_sau_la_binh_phuong_so_truoc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss15_bai_tap_ham_2/danh_sach-.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss15_bai_tap_ham_2/danh_sach-.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss17_OOP_2/adam_va_eva.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss17_OOP_2/adam_va_eva.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_11.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_11_tinh_thue_thu_nhap_ca_nhan.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +137,11 @@
       <workItem from="1742702681822" duration="18126000" />
       <workItem from="1742741769073" duration="96000" />
       <workItem from="1742780287731" duration="26525000" />
-      <workItem from="1742867096515" duration="24513000" />
+      <workItem from="1742867096515" duration="26835000" />
+      <workItem from="1742961345389" duration="1471000" />
+      <workItem from="1742975656108" duration="6417000" />
+      <workItem from="1743001546158" duration="6846000" />
+      <workItem from="1743036763252" duration="28723000" />
     </task>
     <servers />
   </component>

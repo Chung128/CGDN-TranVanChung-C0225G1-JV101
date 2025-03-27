@@ -8,6 +8,18 @@
 <!--"Thực hiện kiểm tra. Nếu số ký tự in Hoa bằng ký tự in thường  thì trả về true. Ngược lại trả về false-->
 <!--"-->
 <body>
+<script>
+    let chuoi = prompt("Nhập chuỗi");
+    console.log(kiemTraBangNhau(chuoi));
 
+    function kiemTraBangNhau(chuoi1) {
+        let chuHoa = chuoi1.split("").filter(kiTu => kiTu >= "A" && kiTu <= "Z").length;
+        let chuThuong = chuoi1.split("").filter(kiTu => kiTu >= "a" && kiTu <= "z").length;
+        if (chuHoa === chuThuong) {
+            return true;
+        }
+        return false;
+    }
+</script>
 </body>
 </html>

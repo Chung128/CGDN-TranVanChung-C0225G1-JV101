@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 1: Viết một hàm kiểm tra một chuỗi. Kiểm trả xem chuối đó có phải định dạng là một email hay không?  xxxxxx@yyy.zzz-->
+<!--+ Một chuỗi là một email nếu thoả mãn điều kiện:-->
+<!-- -	Có ít nhất 1 @-->
+<!-- -	Độ dài email ít nhất 6 ký tự và (x là các ký tự chữ hoặc số, bắt đầu không được là số)-->
+<!-- -	yyy,zzz: là các ký tự chữ in thường và tối thiểu là 3 và tối đa là 10-->
+<!--	Lưu ý không được sử dụng regex-->
+
+<script>
+    // let chuoi = "xxxxxx@yyy.zzz";
+    let chuoi = prompt("nhập chuỗi");
+    if (kiemTraDoDai(chuoi) && kiemTraGmail(chuoi)) {
+        alert("Đây là 1 gmail");
+    } else {
+        alert("Đây không phải là 1 gmail");
+    }
+
+    function kiemTraGmail(chuoi1) {
+        let tachRa = chuoi1.split("");
+        // alert(tachRa);
+        for (let i = 0; i < tachRa.length; i++) {
+            if (tachRa.indexOf("@") === -1) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    function kiemTraDoDai(chuoi2) {
+        let tachRa1 = chuoi2.split(/[@.]/);
+        // alert(tachRa1);
+        if (tachRa1[0].length < 6) {
+            return false;
+        }
+        let tach1 = tachRa1[1].split("");
+        for (let i = 0; i < tach1.length; i++) {
+            if (tachRa1[1].length < 3 || tachRa1[1].length > 10 || tach1[i] < "a" || tach1[i] > "z") {
+                return false;
+            }
+        }
+        let tach2 = tachRa1[1].split("");
+        for (let i = 0; i < tach2.length; i++) {
+            if (tachRa1[2].length < 3 || tachRa1[2].length > 10 || tach2[i] < "a" || tach2[i] > "z") {
+                return false;
+            }
+        }
+        return true;
+    }
+
+</script>
+</body>
+</html>

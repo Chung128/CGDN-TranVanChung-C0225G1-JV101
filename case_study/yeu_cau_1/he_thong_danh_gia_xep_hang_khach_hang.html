@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let chi = +prompt("nhập số tiền đã chi tiêu tích lũy");
+    console.log(xepHangKhachHang(chi));
+
+    function xepHangKhachHang(chiTieu) {
+        if (chiTieu >= 1000) {
+            return {rank: "Platinum", discount: "20%", freeShip: "free", gift: "VIP"};
+        } else if (chiTieu >= 500) {
+            return {rank: "Gold", discount: "10%", freeShip: "free"};
+        } else if (chiTieu >= 100) {
+            return {rank: "Silver", discount: "5% đơn hàng tiếp theo"};
+        } else {
+            return {rank: "Bronze"};
+        }
+    }
+</script>
+</body>
+</html>

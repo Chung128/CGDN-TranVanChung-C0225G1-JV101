@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<!--Bài 1: Cho mảng a chỉ chứa các số nguyên-->
+<!--Xây dựng mảng b là prefix sums của mảng a cụ thể theo công thức:-->
+<!--b[0]   = a[0]-->
+<!--b[1]   = a[0] + a[1]-->
+<!--b[2]   = a[0] + a[1] + a[2]-->
+<!--...-->
+<!--b[n - 1] = a[0] + a[1] + ... + a[n - 1]-->
+<!--với n là độ dài của mảng a.-->
+<!--Ví dụ: Cho a = [1, 2, 3], thì kết quả prefixSums(a) = [1, 3, 6].-->
+<!--Mảng b được tạo ra: [1, 1 + 2, 1 + 2 + 3] = [1, 3, 6]-->
+<body>
+<script>
+    let n = +prompt("Nhập n là số phần tử mảng a");
+    let mangA = new Array(n);
+    for (let i = 0; i < mangA.length; i++) {
+        mangA[i] = +prompt(`Nhập giá trị thứ ${i + 1}`);
+    }
+    console.log(xayMangB(mangA))
+
+    function xayMangB(mang1) {
+        let mangB = [];
+        let mang2 = 0;
+        for (let i = 0; i < mang1.length; i++) {
+            mang2 += mang1[i];
+            mangB.push(mang2);
+        }
+        return mangB;
+    }
+</script>
+</body>
+</html>

@@ -9,5 +9,26 @@
 <!--Nếu đúng return true, sai return false-->
 
 <body>
+<script>
+    let chuoi = prompt("Nhập chuỗi");
+    alert(kiemTraDinhDang(chuoi));
+
+    function kiemTraDinhDang(chuoi1) {
+    //     if (chuoi1.length !== 10) {
+    //         return false;
+    //     }
+        let tachChuoi = chuoi1.split("/");
+        if (tachChuoi[0] < 1 || tachChuoi[0] > 31) {
+            return false;
+        }
+        if (tachChuoi[1] < 1 || tachChuoi[1] > 12) {
+            return false;
+        }
+        if (tachChuoi[2] < 1000 || tachChuoi[2] > 10000) {
+            return false;
+        }
+        return true;
+    }
+</script>
 </body>
 </html>
