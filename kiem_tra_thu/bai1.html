@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n;
+    while (true) {
+        n = +prompt("nhập số từ 0-50");
+        if (n <= 50 && n >= 0) {
+            break;
+        } else {
+            alert("nhập lại số phù hợp");
+        }
+    }
+    let mang = new Array(n);
+    for (let i = 0; i < mang.length; i++) {
+        mang[i] = +prompt(`Nhập giá trị thứ ${i + 1}`);
+    }
+    alert(tinhTong(mang));
+
+    function tinhTong(mang1) {
+        let tongChan = 0;
+        let tongLe = 0;
+        for (let i = 0; i < mang1.length; i++) {
+            if (i % 2 === 0) {
+                tongChan += mang1[i];
+            } else {
+                tongLe += mang1[i];
+            }
+        }
+        let giaTri = tongChan - tongLe;
+        return giaTri;
+    }
+</script>
+</body>
+</html>

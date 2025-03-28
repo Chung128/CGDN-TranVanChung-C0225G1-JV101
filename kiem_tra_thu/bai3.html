@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt("nhập số gía trị mảng đầu vào");
+    let mang = new Array(n);
+    for (let i = 0; i < mang.length; i++) {
+        mang[i] = +prompt(`nhâpj giá trị thứ ${i + 1}`);
+    }
+    alert(traVeSoFibo(mang));
+
+    function traVeSoFibo(mang1) {
+        let a = 0;
+        let b = 1;
+        let timSoFibo = [];
+        for (let i = 0; i < mang1.length; i++) {
+            timSoFibo.push(a);
+            c = a + b;
+            a = b;
+            b = c;
+        }
+        let soFibo = [];
+        for (let i = 0; i < mang1.length; i++) {
+            if (timSoFibo.indexOf(mang1[i]) !== -1) {
+                soFibo.push(mang1[i]);
+            }
+        }
+        return soFibo.sort((a, b) => a - b);
+    }
+</script>
+</body>
+</html>

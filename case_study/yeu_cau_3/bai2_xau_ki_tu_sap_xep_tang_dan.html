@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 2: Cho xâu kí tự. Hãy tìm ra chuỗi con liên tiếp tăng dần có độ dài lớn nhất-->
+<!--Ví dụ: s = "abefaefghedcb", thì kết quả getMaxChildString (s)   “aefgh”-->
+<!-- aefgh : là chuỗi con liên tiếp trong chuỗi cha có độ dài lớp nhất.-->
+<script>
+    let xau = prompt("nhập xâu kí tự vào đây:");
+    alert(timChuoiDaiNhat(xau));
+
+    function timChuoiDaiNhat(tachXau) {
+        // let tachXau = xau1.split("");
+        let chuoiCon1 =tachXau[0];
+        for (let i = 1; i < tachXau.length; i++) {
+            if (tachXau[i] >= tachXau[i -1]) {
+                chuoiCon1 += tachXau[i];
+            }else {
+                break;
+            }
+        }
+        let chuoiConN=[];
+        for (let i =chuoiCon1.length ; i < tachXau.length ; i++) {
+
+        }
+        return chuoiCon1;
+    }
+</script>
+</body>
+</html>
