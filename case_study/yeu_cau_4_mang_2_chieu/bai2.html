@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--Bài 2: Viết hàm liệt kê các số nguyên tố trong mảng 2 chiều,-->
+<!--đếm các số nguyên tố có trong mảng đó.-->
+<body>
+<script>
+    let m = +prompt("Nhập số giá trị mảng 1");
+    let n = +prompt("Nhập số giá trị mảng 2");
+    let mang = new Array(n);
+    for (let i = 0; i < mang.length; i++) {
+        mang[i] = new Array(m);
+    }
+    for (let i = 0; i < mang.length; i++) {
+        for (let j = 0; j < mang[i].length; j++) {
+            mang[i][j] = +prompt(`Nhập phần tử thứ ${i + 1} mảng ${j + 1} `)
+        }
+    }
+
+    alert(kiemTraMang(mang));
+
+    function timSoNguyenTo(n) {
+        if (n <= 1) {
+            return false;
+        }
+        if (n === 2) {
+            return true;
+        }
+        for (let i = 2; i < n; i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    function kiemTraMang(mang2) {
+        let dem = 0;
+        for (let i = 0; i < mang2.length; i++) {
+            for (let j = 0; j < mang2[i].length; j++) {
+                if (timSoNguyenTo(mang2[i][j])) {
+                    dem++;
+                }
+            }
+        }
+        return dem;
+    }
+</script>
+</body>
+</html>

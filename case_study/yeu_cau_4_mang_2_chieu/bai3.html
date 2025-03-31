@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 3: Viết hàm tìm giá trị lớn nhất, nhỏ nhất trong mảng 2 chiều-->
+<script>
+    let m = +prompt("Nhập số giá trị mảng 1");
+    let n = +prompt("Nhập số giá trị mảng 2");
+    let mang = new Array(n);
+    for (let i = 0; i < mang.length; i++) {
+        mang[i] = new Array(m);
+    }
+    for (let i = 0; i < mang.length; i++) {
+        for (let j = 0; j < mang[i].length; j++) {
+            mang[i][j] = +prompt(`nhập phần tử ${i + 1} mảng ${j + 1}`)
+        }
+    }
+    timMaxMin(mang);
+
+    function timMaxMin(mang1) {
+        let min = mang1[0][0];
+        let max = mang1[0][0];
+        for (let i = 0; i < mang1.length; i++) {
+            for (let j = 0; j < mang1[i].length; j++) {
+                if (max < mang1[i][j]) {
+                    max = mang1[i][j];
+                }
+                if (min > mang1[i][j]) {
+                    min = mang1[i][j];
+                }
+            }
+        }
+        alert(`giá trị lớn nhất là ${max} và giá trị nhỏ nhất là ${min} `)
+    }
+</script>
+</body>
+</html>
