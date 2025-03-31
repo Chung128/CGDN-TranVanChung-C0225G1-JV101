@@ -5,8 +5,51 @@
     <title>Title</title>
 </head>
 <body>
+<p id="soSanPham"></p>
+<p id="dauRa"></p>
 <script>
+    class DanhBa {
+        constructor(number, yourname, address) {
+            this.number = number;
+            this.yourname = yourname;
+            this.address = address;
+        }
+    }
 
+    let soDienThoai1 = new DanhBa(123, "Chung", "qb");
+    let soDienThoai2 = new DanhBa(234, "Đông", "kontum");
+    let soDienThoai3 = new DanhBa(345, "Bình", "đn");
+    let danhSachDienThoai = [soDienThoai1, soDienThoai2, soDienThoai3];
+    hienThiDanhBa(danhSachDienThoai);
+    tongSanPham(danhSachDienThoai);
+
+    function hienThiDanhBa(danhSach) {
+        let bang = `<table border=1px;>
+                    <tr>
+                        <th>số điện thoại</th>
+                        <th>tên người dùng</th>
+                        <th>địa chỉ</th>
+                        <th>xóa </th>
+                    </tr>`;
+        for (let i = 0; i < danhSach.length; i++) {
+            bang += `<tr>
+                    <td>${danhSach[i].number}</td>
+                    <td>${danhSach[i].yourname}</td>
+                    <td>${danhSach[i].address}</td>
+                    <td><button id ="hang" onclick="xoaNguoiDung(${i})">Xóa</button> </td>
+                </tr>`
+        }
+        document.getElementById("dauRa").innerHTML = bang;
+    }
+
+    function xoaNguoiDung(chonNguoi) {
+        let cokhong = confirm(`Bạn có thật sự muốn xóa không`);
+        if (cokhong === true) {
+            danhSachDienThoai.splice(chonNguoi, 1);
+        }
+        hienThiDanhBa(danhSachDienThoai);
+        tongSanPham(danhSachDienThoai);
+    }
 </script>
 </body>
 </html>

@@ -9,7 +9,7 @@
     let n;
     while (true) {
         n = +prompt("nhập số từ 0-15");
-        if (n <= 15 && n >= 0 && n % 3 === 0) {
+        if (n <= 15 && n >= 0 && n % 3 === 0&&n%1===0) {
             break;
         } else {
             alert("nhập lại số phù hợp");
@@ -20,10 +20,13 @@
         mang[i] = +prompt(`Nhập giá trị thứ ${i + 1}`);
     }
 
-    function kiemTraTamGiac(mang1) {
+    function kiemTraTamGiac(mang1) {                       // làm thêm dkkhông phải số âm
+        // kiểm tra số âm chưa
         let demMangOK = 0;
         for (let i = 0; i < mang1.length; i += 3) {
-            if (mang1[i] * mang1[i] + mang1[i + 1] * mang1[i + 1] === mang1[i + 2] * mang1[i + 2] || mang1[i] * mang1[i] === mang1[i - 1] * mang1[i + 1] + mang1[i + 2] * mang1[i + 2] || mang1[i + 1] * mang1[i + 1] === mang1[i] * mang1[i] + mang1[i + 2] * mang1[i + 2]) {
+            if (mang1[i] * mang1[i] + mang1[i + 1] * mang1[i + 1] === mang1[i + 2] * mang1[i + 2] ||
+                mang1[i] * mang1[i] === mang1[i - 1] * mang1[i + 1] + mang1[i + 2] * mang1[i + 2] ||
+                mang1[i + 1] * mang1[i + 1] === mang1[i] * mang1[i] + mang1[i + 2] * mang1[i + 2]) {
                 demMangOK++;
             }
         }

@@ -9,24 +9,28 @@
 <!--Ví dụ: s = "abefaefghedcb", thì kết quả getMaxChildString (s)   “aefgh”-->
 <!-- aefgh : là chuỗi con liên tiếp trong chuỗi cha có độ dài lớp nhất.-->
 <script>
-    let xau = prompt("nhập xâu kí tự vào đây:");
+    // let xau = prompt("nhập xâu kí tự vào đây:");
+    let xau = "abefaefghedcb";
     alert(timChuoiDaiNhat(xau));
 
     function timChuoiDaiNhat(tachXau) {
         // let tachXau = xau1.split("");
-        let chuoiCon1 =tachXau[0];
+        let chuoiCon = tachXau[0];
+        let ketQua = "";
         for (let i = 1; i < tachXau.length; i++) {
-            if (tachXau[i] >= tachXau[i -1]) {
-                chuoiCon1 += tachXau[i];
-            }else {
-                break;
+            if (tachXau[i] >= tachXau[i - 1]) {
+                chuoiCon += tachXau[i];
+            } else {
+                if (chuoiCon.length > ketQua.length) {
+                    ketQua = chuoiCon;
+                }
+                chuoiCon = tachXau[i];
             }
         }
-        let chuoiConN=[];
-        for (let i =chuoiCon1.length ; i < tachXau.length ; i++) {
-
+        if (chuoiCon.length > ketQua.length) {
+            ketQua = chuoiCon;
         }
-        return chuoiCon1;
+        return ketQua;
     }
 </script>
 </body>

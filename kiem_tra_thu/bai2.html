@@ -17,10 +17,11 @@
         let kiTuDau = [];
         for (let i = 0; i < chuoiTach.length; i++) {
             if (chuoiTach.length >= 2) {
-                kiTuDau.push(chuoiTach.charAt(0));
+                kiTuDau.push(chuoiTach[i][0]);
             }
         }
-        return kiTuDau;
+        let vietHoa = kiTuDau.join("").toUpperCase();
+        return vietHoa;
     }
 
     alert(taoTuVietTat(chuoi));
