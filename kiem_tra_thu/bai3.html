@@ -6,31 +6,24 @@
 </head>
 <body>
 <script>
-    let n = +prompt("nhập số gía trị mảng đầu vào");
-    let mang = new Array(n);
-    for (let i = 0; i < mang.length; i++) {
-        mang[i] = +prompt(`nhâpj giá trị thứ ${i + 1}`);
-    }
-    alert(traVeSoFibo(mang));
+    // let n = +prompt("Nhập số phần tử trong mảng:");
+    // let mang = new Array(n);
+    // for (let i = 0; i < mang.length; i++) {
+    //     mang[i] = +prompt(`Nhập phần tử tứ ${i + 1}`);
+    // }
 
-    function traVeSoFibo(mang1) {
-        let a = 0;
-        let b = 1;
-        let timSoFibo = [];
+    function timCapPhantu(mang1) {
+        let mang2Chieu = [];
         for (let i = 0; i < mang1.length; i++) {
-            timSoFibo.push(a);
-            c = a + b;
-            a = b;
-            b = c;
-        }
-        let soFibo = [];
-        for (let i = 0; i < mang1.length; i++) {
-            if (timSoFibo.indexOf(mang1[i]) !== -1) {
-                soFibo.push(mang1[i]);
+            if (mang1[i] + mang1[i + 1] === mang1[i + 2]) {
+                mang2Chieu.push([mang1[i], mang1[i + 1]]);
             }
         }
-        return soFibo.sort((a, b) => a - b);
+        return mang2Chieu.sort(([a, b], [c, d]) => [a + b] - [c + d]);
     }
+
+    let mang2 = [1, 5, 6, 11, 9, 20, 8, 0, 8, 1];
+    alert(timCapPhantu(mang2));
 </script>
 </body>
 </html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--Câu 4: Tạo một lớp Máy tính  có:-->
+<!-- - Thuộc tính:-->
+<!--+ Mã máy (string)-->
+<!--+ Tên máy(string)-->
+<!--+ Tên Hãng sản xuất (string)-->
+<!--+ Giá bán (number).-->
+<!-- - Các phương thức getter và setter cho các thuộc tính-->
+<!-- - Phương thức  toString() : phương thức lấy các thông tin của đối tượng.-->
+<!-- -Yêu cầu: Viết chương trình quản lý  Máy tính    với các chức năng sau;-->
+<!--+ Thêm mới 1 máy tính-->
+<!--+ Hiển thị được danh sách máy tính-->
+<body>
+<h3>Thêm mới sản phẩm</h3>
+<input type="number" id="nhapMaMay" placeholder="Nhập mã máy">
+<input type="text" id="nhapTenMay" placeholder="Nhập tên máy"><br>
+<input type="text" id="nhapTenHang" placeholder="Nhập tên hãng máy">
+<input type="number" id="nhapGiaMay" placeholder="Nhập giá bán">
+<button onclick="quanLiMayTinh.themMayTinh()">nhấn thêm</button>
+<h3> Danh sách sản phẩm</h3>
+<p id="dauRa"></p>
+<script>
+    class MayTinh {
+        constructor(ma, ten, tenHang, gia) {
+            this.ma = ma;
+            this.ten = ten;
+            this.hang = tenHang;
+            this.gia = gia;
+        }
+
+        getId() {
+            return this.ma;
+        }
+
+        getName() {
+            return this.ten;
+        }
+
+        getHang() {
+            return this.hang;
+        }
+
+        getPrice() {
+            return this.gia;
+        }
+
+        setId(maSanPham) {
+            this.ma = maSanPham;
+        }
+
+        setName(suaTen) {
+            this.ten = suaTen;
+        }
+
+        setHang(suaTenHang) {
+            this.hang = suaTenHang;
+        }
+
+        setPrice(giaSua) {
+            this.gia = giaSua;
+        }
+    }
+
+    class QuanLiMayTinh {
+        constructor(danhSach = []) {
+            this.mayTinh = danhSach;
+        }
+
+        hienThiDanhSach() {
+            let bang = `<table border="1">
+                          <tr>
+                            <th>mã sản phẩm</th>
+                            <th>tên sản phẩm</th>
+                            <th>tên hãng sản xuất</th>
+                            <th>giá bán</th>
+                        </tr>`;
+            for (let i = 0; i < this.mayTinh.length; i++) {
+                bang += `<tr>
+                            <td>${this.mayTinh[i].getId()}</td>
+                            <td>${this.mayTinh[i].getName()}</td>
+                            <td>${this.mayTinh[i].getHang()}</td>
+                            <td>${this.mayTinh[i].getPrice()} VND</td>
+                        </tr>`;
+            }
+            document.getElementById("dauRa").innerHTML = bang;
+        }
+
+        themMayTinh() {
+            let maMayTinh = document.getElementById("nhapMaMay").value;
+            let tenMayTinh = document.getElementById("nhapTenMay").value;
+            let hangMayTinh = document.getElementById("nhapTenHang").value;
+            let giaMayTinh = document.getElementById("nhapGiaMay").value;
+            if (tenMayTinh.trim() === "" || hangMayTinh.trim() === "" || giaMayTinh.trim() === "" || maMayTinh.trim() === "") {
+                alert("Bạn hãy nhập lại đầy đủ");
+            } else {
+                let mayTinhMoi = new MayTinh(maMayTinh, tenMayTinh, hangMayTinh, giaMayTinh);
+                this.mayTinh.push(mayTinhMoi);
+                document.getElementById("nhapMaMay").value = "";    //xóa dòng sau khi nhập vào ở input
+                document.getElementById("nhapTenMay").value = "";
+                document.getElementById("nhapTenHang").value = "";
+                document.getElementById("nhapGiaMay").value = "";
+                this.hienThiDanhSach();
+            }
+        }
+    }
+
+    let may1 = new MayTinh(12, "k40", "Xiaomi", 4000000);
+    let may2 = new MayTinh(23, "k50", "Samsung", 5000000);
+    let may3 = new MayTinh(34, "k60", "Iphone", 6000000);
+    let bangSanPham = [may1, may2, may3];
+    let quanLiMayTinh = new QuanLiMayTinh(bangSanPham);
+    quanLiMayTinh.hienThiDanhSach();
+</script>
+</body>
+</html>

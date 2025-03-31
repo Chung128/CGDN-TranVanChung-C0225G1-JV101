@@ -17,10 +17,6 @@
         color: white;
         background-color: green;
     }
-
-    body {
-        background-color: pink;
-    }
 </style>
 <fieldset style="width: 450px; text-align: center ">
     <input type="text" id="themMoi" placeholder="Nhập tên sản phẩm">
@@ -91,7 +87,7 @@
         let khongCo = confirm(`Bạn có muốn sửa không.`);
         if (khongCo === true) {
             let suaTen = prompt("Nhập vào tên cần sửa");
-            let suaGia = prompt("Nhập vào tên cần sửa");
+            let suaGia = prompt("Nhập vào giá cần sửa");
             let suaSanPham = new SanPham(suaTen, suaGia);
             danhSachSanPham[thuTuu] = suaSanPham;
         }

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let chuoi = prompt("nhập chuỗi");
+    alert(demSoKiTuHoaThuong(chuoi));
+
+    function demSoKiTuHoaThuong(chuoiGan) {
+        if (chuoiGan === "") {
+            return [0, 0];
+        }
+        let tachChuoi = chuoiGan.split("");
+        let kiTuHoa = [];
+        let kiTuThuong = [];
+        for (let i = 0; i < tachChuoi.length; i++) {
+            if (tachChuoi[i] >= "A" && tachChuoi[i] <= "Z") {
+                kiTuHoa.push(tachChuoi[i]);
+            }
+            if (tachChuoi[i] >= "a" && tachChuoi[i] <= "z") {
+                kiTuThuong.push(tachChuoi[i]);
+            }
+        }
+        let chuHoa = kiTuHoa.length;
+        let chuThuong = kiTuThuong.length;
+        // let chuHoa = chuoiGan.split("").filter(kiTuHoa => kiTuHoa >= "A" && kiTuHoa <= "Z").length;
+        // let chuThuong = chuoiGan.split("").filter(kiTuThuong => kiTuThuong >= "a" && kiTuThuong <= "z").length;
+        return `có ${chuHoa} chữ hoa và ${chuThuong} chữ thường`;
+    }
+</script>
+</body>
+</html>

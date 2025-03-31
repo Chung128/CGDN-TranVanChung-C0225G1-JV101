@@ -6,67 +6,7 @@
 </head>
 <body>
 <script>
-    class MayTinh {
-        constructor(ma, ten, tenHang, gia) {
-            this.id = ma;
-            this.name = ten;
-            this.hang = tenHang;
-            this.price = gia;
-        }
 
-        getId() {
-            return this.id;
-        }
-
-        getName() {
-            return this.name;
-        }
-
-        getHang() {
-            return this.hang;
-        }
-
-        getPrice() {
-            return this.price;
-        }
-
-        setId(maSanPham) {
-            this.id = maSanPham;
-        }
-
-        setName(suaTen) {
-            this.name = suaTen;
-        }
-
-        setHang(suaTenHang) {
-            this.hang = suaTenHang;
-        }
-
-        setPrice(giaSua) {
-            this.price = giaSua;
-        }
-
-        toString() {
-
-        }
-    }
-
-    let may1 = new MayTinh(12, "k40", "Xiaomi", 4000000);
-    let may2 = new MayTinh(23, "k50", "Samsung", 5000000);
-    let may3 = new MayTinh(34, "k60", "Iphone", 6000000);
-    alert(may1.getId());
-    may1.getName();
-    may1.getHang();
-    may1.getPrice();
-    may1.setId(1);
-    may1.setName("k30");
-    may1.setHang("Nokia");
-    may1.setPrice(1000000);
-    let maMay = may1.id;
-    let tenMay = may1.name;
-    let tenNhaSanXuat = may1.hang;
-    let giaMay = may1.price;
-    alert(` đây là máy ${tenMay} có mã là ${maMay} của hãng ${tenNhaSanXuat} \n giá bán: ${giaMay} VND`);
 </script>
 </body>
 </html>

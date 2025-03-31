@@ -6,17 +6,24 @@
 </head>
 <body>
 <script>
-    let chuoi = prompt("nhập chuỗi");
-    alert(demSoKiTuHoaThuong(chuoi));
+    let chuoiNhap = prompt("Nhập chuỗi");
+    let chuoi = chuoiNhap.trim();
 
-    function demSoKiTuHoaThuong(chuoiGan) {
-        if (chuoiGan === "") {
-            return [0, 0];
+    function taoTuVietTat(chuoiGan) {
+        let chuoiTach = chuoiGan.split(" ");
+        if (chuoiTach.length === 1) {
+            return "Chuỗi chỉ có 1 từ nên không cần viết tắt";
         }
-        let chuHoa = chuoiGan.split("").filter(kiTuHoa => kiTuHoa >= "A" && kiTuHoa <= "Z").length;
-        let chuThuong = chuoiGan.split("").filter(kiTuThuong => kiTuThuong >= "a" && kiTuThuong <= "z").length;
-        return `có ${chuHoa} chữ hoa và ${chuThuong} chữ thương`;
+        let kiTuDau = [];
+        for (let i = 0; i < chuoiTach.length; i++) {
+            if (chuoiTach.length >= 2) {
+                kiTuDau.push(chuoiTach.charAt(0));
+            }
+        }
+        return kiTuDau;
     }
+
+    alert(taoTuVietTat(chuoi));
 </script>
 </body>
 </html>
